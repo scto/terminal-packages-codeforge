@@ -477,7 +477,7 @@ for package_arch in "${TERMUX_ARCHITECTURES[@]}"; do
 	pull_package jq
 
 	# Necessary packages for AndroidIDE
-	pull_package androidide-tools
+	#pull_package androidide-tools
 	pull_package which
 	pull_package file
 
