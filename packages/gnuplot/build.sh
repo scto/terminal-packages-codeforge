@@ -3,9 +3,9 @@ TERMUX_PKG_DESCRIPTION="Command-line driven graphing utility"
 TERMUX_PKG_LICENSE="custom"
 TERMUX_PKG_LICENSE_FILE="Copyright"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="5.4.10"
+TERMUX_PKG_VERSION="6.0.5"
 TERMUX_PKG_SRCURL=https://downloads.sourceforge.net/project/gnuplot/gnuplot/${TERMUX_PKG_VERSION}/gnuplot-${TERMUX_PKG_VERSION}.tar.gz
-TERMUX_PKG_SHA256=975d8c1cc2c41c7cedc4e323aff035d977feb9a97f0296dd2a8a66d197a5b27c
+TERMUX_PKG_SHA256=73237f37f03306d68bfae133a9a50d5e9341384e198d5ab37eeca9ab534deed8
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_DEPENDS="glib, libandroid-support, libcairo, libgd, libiconv, libx11, pango, readline"
 TERMUX_PKG_BREAKS="gnuplot-x"
@@ -36,5 +36,5 @@ termux_step_post_make_install() {
 	mkdir -p $TERMUX_PREFIX/share/gnuplot/${TERMUX_PKG_VERSION:0:3}/
 
 	cp $TERMUX_PKG_HOSTBUILD_DIR/docs/gnuplot.gih \
-	   $TERMUX_PREFIX/share/gnuplot/${TERMUX_PKG_VERSION:0:3}/gnuplot.gih
+		$TERMUX_PREFIX/share/gnuplot/${TERMUX_PKG_VERSION:0:3}/gnuplot.gih
 }

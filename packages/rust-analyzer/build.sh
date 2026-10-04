@@ -1,12 +1,15 @@
-TERMUX_PKG_HOMEPAGE=https://github.com/rust-lang/rust-analyzer
+TERMUX_PKG_HOMEPAGE=https://rust-analyzer.github.io/
 TERMUX_PKG_DESCRIPTION="A Rust compiler front-end for IDEs"
 TERMUX_PKG_LICENSE="Apache-2.0, MIT"
 TERMUX_PKG_LICENSE_FILE="LICENSE-APACHE, LICENSE-MIT"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="20231211"
+TERMUX_PKG_VERSION="20260928"
 _VERSION=${TERMUX_PKG_VERSION:0:4}-${TERMUX_PKG_VERSION:4:2}-${TERMUX_PKG_VERSION:6:2}
-TERMUX_PKG_SRCURL=https://github.com/rust-lang/rust-analyzer/archive/refs/tags/${_VERSION}.tar.gz
-TERMUX_PKG_SHA256=1c7185c04da12c838198cd304e09cd0f2d9af85f973c1be2a8100c9042547c28
+TERMUX_PKG_SRCURL="https://github.com/rust-lang/rust-analyzer/archive/refs/tags/${_VERSION}.tar.gz"
+TERMUX_PKG_SHA256=c44c94ab8167a6afd649d430e8bda87b2bc1af0f4165e8f987c21cbe9b521297
+TERMUX_PKG_REPOLOGY_METADATA_VERSION="${_VERSION}"
+TERMUX_PKG_DEPENDS="rust-src"
+TERMUX_PKG_ANTI_BUILD_DEPENDS="rust-src"
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_AUTO_UPDATE=true
 
@@ -15,7 +18,7 @@ termux_pkg_auto_update() {
 	local api_url="https://api.github.com/repos/rust-lang/rust-analyzer/tags"
 	local api_url_r=$(curl -s "${api_url}")
 	local r1=$(echo "${api_url_r}" | jq .[].name | sed -e 's|\"||g')
-	local latest_tag=$(echo "${r1}" | sed -nE 's/^([0-9]*-)/\1/p' | sort | tail -n1)
+	local latest_tag=$(echo "${r1}" | sed -nE 's/^([0-9]*-)/\1/p' | sort -V | tail -n1)
 	# https://github.com/termux/termux-packages/issues/18667
 	local latest_version=${latest_tag:0:4}${latest_tag:5:2}${latest_tag:8:2}
 	if [[ "${latest_version}" == "${TERMUX_PKG_VERSION}" ]]; then
@@ -54,7 +57,8 @@ termux_step_pre_configure() {
 }
 
 termux_step_make() {
-	cargo build --jobs "${TERMUX_MAKE_PROCESSES}" --target "${CARGO_TARGET_NAME}" --release
+	export CFG_RELEASE=1
+	cargo build --jobs "${TERMUX_PKG_MAKE_PROCESSES}" --target "${CARGO_TARGET_NAME}" --release
 }
 
 termux_step_make_install() {

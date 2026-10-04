@@ -2,26 +2,71 @@ TERMUX_PKG_HOMEPAGE=https://github.com/XmacsLabs/mogan
 TERMUX_PKG_DESCRIPTION="A structure editor forked from GNU TeXmacs"
 TERMUX_PKG_LICENSE="GPL-3.0"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION=1.1.6
-TERMUX_PKG_SRCURL=https://github.com/XmacsLabs/mogan/archive/refs/tags/v${TERMUX_PKG_VERSION}.tar.gz
-TERMUX_PKG_SHA256=23ae08cd3c2af99d952b5ec37253ee639519402784b8766f37b2d223587659ab
-TERMUX_PKG_DEPENDS="freetype, ghostscript, libandroid-complex-math, libandroid-execinfo, libandroid-spawn, libc++, libcurl, libiconv, libjpeg-turbo, libpng, libsqlite, mogan-data, qt5-qtbase, qt5-qtsvg, which, zlib"
-TERMUX_PKG_BUILD_DEPENDS="qt5-qtbase-cross-tools"
-TERMUX_PKG_ANTI_BUILD_DEPENDS="which"
+TERMUX_PKG_VERSION="1.2.9.8"
+TERMUX_PKG_REVISION=5
+TERMUX_PKG_SRCURL="https://github.com/XmacsLabs/mogan/archive/refs/tags/v${TERMUX_PKG_VERSION}.tar.gz"
+TERMUX_PKG_SHA256=70af74dad16816a8097b877dc4cd94202f35517468ab54f6ae6f84ede32746fb
+TERMUX_PKG_DEPENDS="freetype, ghostscript, libandroid-complex-math, libandroid-execinfo, libandroid-spawn, libandroid-wordexp, libc++, libcurl, libgit2, libiconv, libjpeg-turbo, libpng, qt6-qtbase, qt6-qtsvg, zlib"
+TERMUX_PKG_BUILD_DEPENDS="qt6-qtbase-cross-tools"
 TERMUX_PKG_BUILD_IN_SRC=true
+TERMUX_PKG_AUTO_UPDATE=true
+TERMUX_PKG_RM_AFTER_INSTALL="
+lib/libcurl.so
+"
+
+termux_pkg_auto_update() {
+	local api_url="https://api.github.com/repos/XmacsLabs/mogan/git/refs/tags"
+	local latest_refs_tags=$(curl -s "${api_url}" | jq .[].ref | sed -ne "s|.*v\(.*\)\"|\1|p")
+	if [[ -z "${latest_refs_tags}" ]]; then
+		echo "WARN: Unable to get latest refs tags from upstream. Try again later." >&2
+		return
+	fi
+	local latest_version=$(echo "${latest_refs_tags}" | grep "^1.2.9." | sort -V | tail -n1)
+
+	termux_pkg_upgrade_version "${latest_version}"
+}
+
+termux_step_post_get_source() {
+	sed \
+		"s|@TERMUX_PREFIX@|${TERMUX_PREFIX}|" \
+		"${TERMUX_PKG_BUILDER_DIR}/lolly.diff" \
+		> "${TERMUX_PKG_SRCDIR}"/xmake/packages/l/lolly/lolly.diff
+	cp -f "${TERMUX_PKG_BUILDER_DIR}"/s7.diff \
+		"${TERMUX_PKG_SRCDIR}"/xmake/packages/s/s7/s7.diff
+	cp -f "${TERMUX_PKG_BUILDER_DIR}"/moebius.diff \
+		"${TERMUX_PKG_SRCDIR}"/xmake/packages/m/moebius/moebius.diff
+}
 
 termux_step_pre_configure() {
+	# this is a workaround for build-all.sh issue
+	TERMUX_PKG_DEPENDS+=", mogan-data"
+
 	termux_setup_cmake
 	termux_setup_xmake
 
 	# xmake tests -ldl wrongly?
 	LD="${CXX}"
 
+	# allows 'scripts/run-docker.sh ./build-package,sh -I -f -a all mogan' to work
+	# without causing 'ld.lld: error: /home/builder/.xmake/packages/s/s7/
+	# 20241122/2613d5544f43431dad530be0c61b8a28/lib/libs7.a(s7.c.o)
+	# is incompatible with armelf_linux_eabi'
+	export XMAKE_GLOBALDIR="$TERMUX_PKG_TMPDIR"
+
+	# for some reason building mogan can corrupt $TERMUX_PREFIX/lib/libcurl.so
+	# and /home/builder/.termux-build/_cache/xmake-2.9.5/bin/xmake ,
+	# but if they are backed up, then restored when the build completes, the chance
+	# of ruining the builds of other packages after mogan (including repeated builds of mogan)
+	# is reduced.
+	mkdir -p "$TERMUX_PKG_TMPDIR/backup_dir"
+	export XMAKE_ORIG=$(command -v xmake)
+	cp "$TERMUX_PREFIX/lib/libcurl.so" "$TERMUX_PKG_TMPDIR/backup_dir/libcurl.so"
+	cp "$XMAKE_ORIG" "$TERMUX_PKG_TMPDIR/backup_dir/xmake"
+
 	if [[ "${TERMUX_ON_DEVICE_BUILD}" == "false" ]]; then
-		install -Dm755 "${TERMUX_PKG_BUILDER_DIR}/qmake.sh" "${TERMUX_PKG_BUILDDIR}/bin/qmake"
-		sed -e "s|@TERMUX_PREFIX@|${TERMUX_PREFIX}|g" -i "${TERMUX_PKG_BUILDDIR}/bin/qmake"
-		export PATH="${TERMUX_PKG_BUILDDIR}/bin:${TERMUX_PREFIX}/opt/qt/cross/bin:${PATH}"
-		export QMAKESPEC="${TERMUX_PREFIX}/lib/qt/mkspecs/termux-cross"
+		install -Dm755 "${TERMUX_PKG_BUILDER_DIR}/qmake.sh" "${TERMUX_PKG_TMPDIR}/qmake"
+		sed -e "s|@TERMUX_PREFIX@|${TERMUX_PREFIX}|g" -i "${TERMUX_PKG_TMPDIR}/qmake"
+		export PATH="${TERMUX_PKG_TMPDIR}:${TERMUX_PREFIX}/opt/qt6/cross/bin:${PATH}"
 	fi
 
 	command -v qmake
@@ -42,11 +87,11 @@ termux_step_make() {
 		--yes \
 		--verbose \
 		--diagnosis \
-		-m release \
+		-m releasedbg \
 		--sdk="${TERMUX_STANDALONE_TOOLCHAIN}" \
 		--cross="${host_platform}-" \
-		--cflags="${CFLAGS}" \
-		--cxxflags="${CXXFLAGS}" \
+		--cflags="${CPPFLAGS} ${CFLAGS}" \
+		--cxxflags="${CPPFLAGS} ${CXXFLAGS}" \
 		--ldflags="${LDFLAGS}"
 
 	echo "xmake build"
@@ -54,8 +99,7 @@ termux_step_make() {
 		--yes \
 		--verbose \
 		--diagnosis \
-		--jobs="${TERMUX_MAKE_PROCESSES}" \
-		--all
+		--jobs="${TERMUX_PKG_MAKE_PROCESSES}"
 }
 
 termux_step_make_install() {
@@ -65,8 +109,10 @@ termux_step_make_install() {
 		--verbose \
 		--diagnosis \
 		-o "${TERMUX_PREFIX}" \
-		mogan_install
+		research
+}
 
-	mkdir -p $TERMUX_PREFIX/share/Xmacs/plugins/shell/bin
-	ln -sfTr $TERMUX_PREFIX/{libexec,share}/Xmacs/plugins/shell/bin/tm_shell
+termux_step_post_make_install() {
+	cp "$TERMUX_PKG_TMPDIR/backup_dir/libcurl.so" "$TERMUX_PREFIX/lib/libcurl.so"
+	cp "$TERMUX_PKG_TMPDIR/backup_dir/xmake" "$XMAKE_ORIG"
 }

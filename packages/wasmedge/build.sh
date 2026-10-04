@@ -3,15 +3,18 @@ TERMUX_PKG_DESCRIPTION="A lightweight, high-performance, and extensible WebAssem
 TERMUX_PKG_LICENSE="Apache-2.0"
 TERMUX_PKG_LICENSE_FILE="LICENSE, LICENSE.spdx"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="0.13.5"
-TERMUX_PKG_SRCURL=https://github.com/WasmEdge/WasmEdge/archive/refs/tags/${TERMUX_PKG_VERSION}.tar.gz
-TERMUX_PKG_SHA256=588b8933a89f75c3ee5d4b92fe9d65294ae86fd48a95d2d4ac1a93ee3c5e1d75
-TERMUX_PKG_DEPENDS="libc++"
+TERMUX_PKG_VERSION="0.17.2"
+# Use source tarball from release assets to get VERSION file for proper version number
+TERMUX_PKG_SRCURL=https://github.com/WasmEdge/WasmEdge/releases/download/${TERMUX_PKG_VERSION}/WasmEdge-${TERMUX_PKG_VERSION}-src.tar.gz
+TERMUX_PKG_SHA256=7f2ef28b45bc136ee1f13a3453caab91d0dd2ba141dce599008486b561a63eac
+TERMUX_PKG_DEPENDS="libc++, libspdlog"
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
--DWASMEDGE_BUILD_AOT_RUNTIME=OFF
 -DWASMEDGE_FORCE_DISABLE_LTO=ON
+-DWASMEDGE_USE_LLVM=OFF
 "
+# Until fmt 11.0.3 is released with https://github.com/fmtlib/fmt/issues/4140:
+TERMUX_PKG_EXCLUDED_ARCHES="arm, i686"
 
 termux_step_pre_configure() {
 	case "${TERMUX_ARCH}" in
@@ -20,6 +23,13 @@ termux_step_pre_configure() {
 		CXXFLAGS+=" -malign-double"
 		;;
 	esac
+
+	# upstream has explicitly stated that it's OK to disable this error
+	# in order to force the build with LLVM 21 to complete successfully
+	# error: 'is_class' cannot be specialized:
+	# Users are not allowed to specialize this standard library entity
+	# https://github.com/WasmEdge/WasmEdge/issues/4071#issuecomment-2763100292
+	export CXXFLAGS+=" -Wno-invalid-specialization"
 }
 
 # wasmedge does not support LLVM 17 yet

@@ -3,26 +3,28 @@ TERMUX_PKG_DESCRIPTION="A Suite of Sparse matrix packages."
 TERMUX_PKG_GROUPS="science"
 TERMUX_PKG_LICENSE="GPL-3.0"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION=7.3.1
-TERMUX_PKG_SRCURL=https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/refs/tags/v${TERMUX_PKG_VERSION}.tar.gz
-TERMUX_PKG_SHA256=b512484396a80750acf3082adc1807ba0aabb103c2e09be5691f46f14d0a9718
+TERMUX_PKG_VERSION="2:7.14.1"
+TERMUX_PKG_SRCURL=https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/refs/tags/v${TERMUX_PKG_VERSION#*:}.tar.gz
+TERMUX_PKG_SHA256=81e560e1f74546df139edb765b3f5bc865866da23062312ffe8fd821063c8397
 TERMUX_PKG_DEPENDS="libandroid-complex-math, libgmp, libmpfr, libopenblas"
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_FORCE_CMAKE=true
 TERMUX_PKG_AUTO_UPDATE=true
+TERMUX_PKG_BREAKS="sundials (<< 7.1.1-2), octave (<< 8.4.0-6), octave-x (<< 8.4.0-5)"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DCMAKE_SYSTEM_NAME=Linux
 -DBLA_VENDOR=OpenBLAS
 -DALLOW_64BIT_BLAS=OFF
+-DGRAPHBLAS_CROSS_TOOLCHAIN_FLAGS_NATIVE=\"-DCMAKE_TOOLCHAIN_FILE=$TERMUX_PKG_BUILDER_DIR/graphblas-host-toolchain.cmake\"
 "
-TERMUX_PKG_BLACKLISTED_ARCHES="arm, i686"
+TERMUX_PKG_EXCLUDED_ARCHES="arm, i686"
 
 termux_step_configure() {
 	termux_setup_cmake
 	termux_setup_ninja
 	termux_setup_flang
 
-	LDFLAGS+=" -landroid-complex-math -lm"
+	LDFLAGS+=" -fopenmp -static-openmp -landroid-complex-math -lm"
 }
 
 termux_step_make() {
@@ -69,8 +71,8 @@ termux_step_make() {
 	CMAKE_OPTIONS+=" -DBUILD_TESTING=OFF"
 	CMAKE_OPTIONS+=" $(echo $TERMUX_PKG_EXTRA_CONFIGURE_ARGS)"
 
-	make -j $TERMUX_MAKE_PROCESSES \
-		CMAKE_OPTIONS="$CMAKE_OPTIONS" JOBS=$TERMUX_MAKE_PROCESSES
+	make -j $TERMUX_PKG_MAKE_PROCESSES \
+		CMAKE_OPTIONS="$CMAKE_OPTIONS" JOBS=$TERMUX_PKG_MAKE_PROCESSES
 }
 
 termux_step_make_install() {
@@ -80,6 +82,7 @@ termux_step_make_install() {
 termux_step_post_massage() {
 	# Do not forget to bump revision of reverse dependencies and rebuild them
 	# after SOVERSION is changed.
+	# local _SOVERSION_GUARD_FILES=$(find lib/ | grep -E '\.so\.[0-9]+$' | sort)
 	local _SOVERSION_GUARD_FILES="
 lib/libamd.so.3
 lib/libbtf.so.2
@@ -88,17 +91,19 @@ lib/libccolamd.so.3
 lib/libcholmod.so.5
 lib/libcolamd.so.3
 lib/libcxsparse.so.4
-lib/libgpuqrengine.so.3
-lib/libgraphblas.so.8
-lib/libklu.so.2
+lib/libgraphblas.so.10
 lib/libklu_cholmod.so.2
+lib/libklu.so.2
+lib/liblagraph.so.1
+lib/liblagraphx.so.1
 lib/libldl.so.3
-lib/libmongoose.so.3
+lib/libparu.so.1
 lib/librbio.so.4
-lib/libspex.so.2
+lib/libspexpython.so.3
+lib/libspex.so.3
 lib/libspqr.so.4
-lib/libsuitesparse_gpuruntime.so.3
 lib/libsuitesparseconfig.so.7
+lib/libsuitesparse_mongoose.so.3
 lib/libumfpack.so.6
 "
 	local f

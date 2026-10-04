@@ -3,11 +3,15 @@ TERMUX_PKG_DESCRIPTION="C library for finding and handling crystal symmetries"
 TERMUX_PKG_GROUPS="science"
 TERMUX_PKG_LICENSE="BSD 3-Clause"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="2.2.0"
+TERMUX_PKG_VERSION="2.7.0"
 TERMUX_PKG_SRCURL="https://github.com/spglib/spglib/archive/refs/tags/v$TERMUX_PKG_VERSION.tar.gz"
-TERMUX_PKG_SHA256=ac929e20ec9d4621411e2cdec59b1442e02506c1e546005bbe2c7f781e9bd49a
+TERMUX_PKG_SHA256=b22fc9abae9716c574fbc6d55cfc53ed654a714fccc5657a26ff5d18114bd8bd
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
--DWITH_Fortran=OFF
--DUSE_OMP=ON
+-DSPGLIB_USE_OMP=ON
+-DSPGLIB_WITH_Fortran=OFF
 "
+
+termux_step_pre_configure() {
+	LDFLAGS+=" -fopenmp -static-openmp"
+}

@@ -1,12 +1,12 @@
-TERMUX_PKG_HOMEPAGE=http://www.freerdp.com/
+TERMUX_PKG_HOMEPAGE=https://www.freerdp.com/
 TERMUX_PKG_DESCRIPTION="A free remote desktop protocol library and clients"
 TERMUX_PKG_LICENSE="Apache-2.0"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION=2.11.2
+TERMUX_PKG_VERSION="3.32.1"
 TERMUX_PKG_SRCURL=https://github.com/FreeRDP/FreeRDP/archive/refs/tags/$TERMUX_PKG_VERSION.tar.gz
-TERMUX_PKG_SHA256=674b5600bc2ae3e16e5b5a811c7d5b0daaff6198601ba278bd15b4cb9b281044
+TERMUX_PKG_SHA256=8803dd26ec9660550252f255cf2d672a785ddd8f544bb475834993e96807c87f
 TERMUX_PKG_AUTO_UPDATE=true
-TERMUX_PKG_DEPENDS="libandroid-shmem, libcairo, libjpeg-turbo, libusb, libwayland, libx11, libxcursor, libxdamage, libxext, libxfixes, libxi, libxinerama, libxkbcommon, libxkbfile, libxrandr, libxrender, libxv, openssl, pulseaudio, zlib"
+TERMUX_PKG_DEPENDS="libandroid-shmem, libcairo, libicu, libjpeg-turbo, libusb, libwayland, libx11, libxcursor, libxdamage, libxext, libxfixes, libxi, libxinerama, libxkbcommon, libxkbfile, libxrandr, libxrender, libxv, openssl, pulseaudio, zlib"
 TERMUX_PKG_BUILD_DEPENDS="libwayland-cross-scanner, libwayland-protocols"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DANDROID_NO_TERMUX=OFF
@@ -21,6 +21,10 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -DWITH_JPEG=ON
 -DWITH_OPENSSL=ON
 -DWITH_SERVER=ON
+-DWITH_OPUS=OFF
+-DWITH_SWSCALE=OFF
+-DWITH_FUSE=OFF
+-DWITH_KRB5=OFF
 "
 
 termux_step_post_get_source() {
@@ -31,8 +35,16 @@ termux_step_post_get_source() {
 }
 
 termux_step_pre_configure() {
-	export PATH="$TERMUX_PREFIX/opt/libwayland/cross/bin:$PATH"
+	termux_setup_wayland_cross_pkg_config_wrapper
 
+	CFLAGS+=" -Wno-incompatible-function-pointer-types"
 	CPPFLAGS+=" -D__USE_BSD"
 	LDFLAGS+=" -landroid-shmem"
+}
+
+termux_step_post_configure() {
+	mkdir -p "${TERMUX_PKG_TMPDIR}/bin"
+	clang "${TERMUX_PKG_SRCDIR}/client/common/man/generate_argument_manpage.c" -o "${TERMUX_PKG_TMPDIR}/bin/generate_argument_manpage" -fno-sanitize=all \
+		-I"${TERMUX_PKG_BUILDDIR}/include" -I"${TERMUX_PKG_BUILDDIR}/winpr/include" -I"${TERMUX_PKG_SRCDIR}/winpr/include"
+	PATH+=":${TERMUX_PKG_TMPDIR}/bin"
 }

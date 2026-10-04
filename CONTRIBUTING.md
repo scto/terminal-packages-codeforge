@@ -4,7 +4,7 @@ Termux is an open source application and it is built on users' contributions.
 However, most of work is done by Termux maintainers on their spare time and
 therefore only priority tasks are being completed.
 
-Developer's wiki is available at https://github.com.itsaky.androidide/termux-packages/wiki.
+Developer's wiki is available at https://github.com/termux/termux-packages/wiki.
 
 ## How you can contribute to Termux project
 
@@ -32,17 +32,17 @@ Developer's wiki is available at https://github.com.itsaky.androidide/termux-pac
   dependencies, unprefixed hardcoded FHS paths, crashes, etc.
 
   If you can't submit a pull request with patches fixing the problem, you can
-  open new [issue](https://github.com.itsaky.androidide/termux-packages/issues/new/choose).
+  open new [issue](https://github.com/termux/termux-packages/issues/new/choose).
 
 - **Fixing known bugs**
 
-  Take a look at https://github.com.itsaky.androidide/termux-packages/issues. There many
+  Take a look at https://github.com/termux/termux-packages/issues. There many
   issue tickets having tag `bug report` or `help wanted`. They all are waiting
   to be resolved.
 
 - **Submitting new packages**
 
-  There are lots of unresolved [package requests](https://github.com.itsaky.androidide/termux-packages/issues?q=is%3Aissue+is%3Aopen+label%3A%22package+request%22).
+  There are lots of unresolved [package requests](https://github.com/termux/termux-packages/issues?q=is%3Aissue+is%3Aopen+label%3A%22package+request%22).
   Pay attention to tickets having tag `help wanted`.
 
 - **Keeping existing packages up-to-date**
@@ -60,14 +60,14 @@ Developer's wiki is available at https://github.com.itsaky.androidide/termux-pac
 
 - **Donate**
 
-  See https://github.com.itsaky.androidide/termux-packages/wiki/Donate for details.
+  See https://github.com/termux/termux-packages/wiki/Donate for details.
 
 ## Requesting new package
 
 If you are looking for specific package and didn't find it included in our
 repositories, you can request it.
 
-Open a new [issue](https://github.com.itsaky.androidide/termux-packages/issues/new/choose)
+Open a new [issue](https://github.com/termux/termux-packages/issues/new/choose)
 filling the `package request` template. You will need to provide at least
 package description and its home page and URL to source repository. Remember
 that your request will not be processed immediately.
@@ -98,13 +98,20 @@ met these conditions:
   Software which is either closed-source, contain binary-only components or
   is distributed under End User License Agreement is not accepted.
 
-- **Not installable through cpan, gem, npm, or pip**
+- **Not installable through language-specific package managers**
 
-  These packages should be installed through `cpan`, `gem`, `npm`, `pip` and
-  so on.
+  These packages should be installed through language-specific package managers,
+  e.g:
 
-  Packaging modules for Perl, Ruby, Node.js, is problematic, especially
-  when it comes to cross-compiling native extensions.
+  - `cargo`
+  - `cpan`
+  - `dotnet tool`
+  - `gem`
+  - `npm`
+  - `pip`
+
+  Packaging modules for Node.js, Perl, Ruby, is problematic, especially when it
+  comes to cross-compiling native extensions.
 
 - **Not taking too much disk space**
 
@@ -160,7 +167,7 @@ but that DOES NOT mean they will do all work instead of you.
 - Experience with Linux distribution like Debian (preferred), Arch, Fedora, etc.
 - Experience with compiling software from source.
 - Good shell scripting skills.
-- You have read https://github.com.itsaky.androidide/termux-packages/wiki.
+- You have read https://github.com/termux/termux-packages/wiki.
 
 If you never used Linux distribution or Termux was your first experience with
 Linux environment, we strongly recommending to NOT send pull requests since
@@ -171,7 +178,7 @@ new package, as your pull request will be closed without merge.
 
 Do not send disruptive changes, like without reason reverting commits or
 deleting files, creating spam content, etc. Authors of such pull requests may
-be blocked from contributing to [Termux](https://github.com.itsaky.androidide) project.
+be blocked from contributing to [Termux](https://github.com/termux) project.
 
 ### Submitting new packages: checklist
 
@@ -263,7 +270,7 @@ request with new package. Pay attention to things listed below.
    equivalents. Termux installation prefix is
 
    ```
-   /data/data/com.itsaky.androidide/files/usr
+   /data/data/com.termux/files/usr
    ```
 
    and can be considered as virtual rootfs.
@@ -271,7 +278,7 @@ request with new package. Pay attention to things listed below.
    Home directory is stored outside of prefix:
 
    ```
-   /data/data/com.itsaky.androidide/files/home
+   /data/data/com.termux/files/home
    ```
 
    Don't hardcode home and prefix, use shortcuts `@TERMUX_HOME@` and
@@ -500,7 +507,7 @@ separated by commas.
 `TERMUX_PKG_SRCURL` should contain URL only for the official source bundle.
 Use of forks is allowed only under a good reason.
 
-More about `build.sh` variables you can read on [developer's wiki](https://github.com.itsaky.androidide/termux-packages/wiki/Creating-new-package#table-of-available-package-control-fields).
+More about `build.sh` variables you can read on [developer's wiki](https://github.com/termux/termux-packages/wiki/Creating-new-package#table-of-available-package-control-fields).
 
 ### Creating patch files
 
@@ -511,40 +518,92 @@ and obtain files that describe your changes in machine readable format.
 We use patches made in [Unified Format](https://www.gnu.org/software/diffutils/manual/html_node/Detailed-Unified.html)
 generated by either GNU `diff`, `git` or other compatible utility.
 
-See below on how to make a patch with GNU `diff`:
+
+> [!TIP]
+> Most of the time using `git diff` will be the easier method for generating or updating patches.
+
+**Making patches using `git diff`:**
+
+1. Clone the package's source repository:<br>
+   <sup>(You may want to switch directory to `/tmp` for doing this to simplify cleanup)</sup>
+
+   ```bash
+   # Example: cURL
+   git clone https://github.com/curl/curl
+   ```
+
+2. Checkout the latest release:
+
+   ```bash
+   cd curl
+   # TIP: You can use `git describe` to figure out the latest tag.
+   git describe
+   # The output should look something like: curl-8_12_1-118-gc10fd464e
+   # This is made of <last tag name>-<number of commits since>-<hash of current checked out commit>
+   git checkout curl-8_12_1
+   ```
+
+3. Make changes:
+   ```bash
+   vim sourcefile.c
+   ```
+
+4. Generate patch file
+   ```bash
+   # Check that the changes are what you expect
+   git diff
+   # write to file
+   git diff > /path/to/package-build/example.patch
+   ```
+> [!NOTE]
+> If you are making multiple patches you may want to run `git reset HEAD --hard`.<br>
+> After saving a patch to a file so you do not duplicate parts between different patches.
+> Alternatively you can restrict what is included in the `git diff`
+> by passing a list of file/directory names to it as arguments.
+> This won't work for multiple separate patches to the same file though.
+
+   If a project does not use Git, or makes significant additions to release tarballs.<br>
+   You may need to resort to.
+
+<details><summary>Making patches using GNU <code>diff</code>:</summary>
+<p>
 
 1. Get source code, for example with this command:
 
-   ```
+   ```bash
    cd ./packages/your-package
    (source build.sh 2>/dev/null; curl -LO "$TERMUX_PKG_SRCURL")
    ```
 
 2. Extract tarball and make a copy of source code tree:
 
-   ```
+   ```bash
    tar xf package-1.0.tar.gz
    cp -a package-1.0 package-1.0.mod
    ```
 
 3. Change current directory to source code tree:
 
-   ```
+   ```bash
    cd package-1.0.mod
    ```
 
 4. Make changes:
 
-   ```
+   ```bash
    vim sourcefile.c
    ```
 
 5. Generate difference between original and modified sources:
 
-   ```
+   ```bash
    cd ..
    diff -uNr package-1.0 package-1.0.mod > very-nice-improvement.patch
    ```
+
+</p>
+</details>
+<br>
 
 Patch file names should be self descriptive, so it will be easier for other
 people to understand what your patch does. Also it is preferred that every

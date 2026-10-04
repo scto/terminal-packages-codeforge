@@ -2,9 +2,9 @@ TERMUX_PKG_HOMEPAGE=https://xorg.freedesktop.org/wiki/
 TERMUX_PKG_DESCRIPTION="Wayland X11 server"
 TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="23.2.3"
+TERMUX_PKG_VERSION="24.1.13"
 TERMUX_PKG_SRCURL=https://xorg.freedesktop.org/releases/individual/xserver/xwayland-${TERMUX_PKG_VERSION}.tar.xz
-TERMUX_PKG_SHA256=eb9d9aa7232c47412c8835ec15a97c575f03563726c787754ff0c019bd07e302
+TERMUX_PKG_SHA256=173aea3d6f79609164c04528e1c8e4c9b60fcd59391c3c9dad4667297d727fb6
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_DEPENDS="libandroid-shmem, libdrm, libepoxy, libpciaccess, libpixman, libwayland, libwayland-protocols, libx11, libxau, libxcvt, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp"
 TERMUX_PKG_BUILD_DEPENDS="libwayland-cross-scanner"
@@ -24,7 +24,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Dxf86bigfont=true
 -Ddrm=true
 -Dglamor=false
--Dxwayland_eglstream=false
 -Dxvfb=false
 -Dlibunwind=false
 -Dipv6=true
@@ -40,9 +39,9 @@ share/man/man1/Xserver.1
 "
 
 termux_step_pre_configure() {
-	export PATH="$TERMUX_PREFIX/opt/libwayland/cross/bin:$PATH"
+	termux_setup_wayland_cross_pkg_config_wrapper
 
-	CFLAGS+=" -fcommon -fPIC -DFNDELAY=O_NDELAY -Wno-int-to-pointer-cast"
+	CFLAGS+=" -fcommon -fPIC -DFNDELAY=O_NDELAY -Wno-int-to-pointer-cast -Wno-implicit-function-declaration"
 	CPPFLAGS+=" -fcommon -fPIC -I${TERMUX_PREFIX}/include/libdrm"
 	LDFLAGS+=" -landroid-shmem"
 }

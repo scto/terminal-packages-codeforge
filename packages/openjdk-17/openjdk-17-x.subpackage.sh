@@ -1,12 +1,11 @@
 TERMUX_SUBPKG_INCLUDE="
-opt/openjdk-${TERMUX_PKG_VERSION}/include/jawt.h
-opt/openjdk-${TERMUX_PKG_VERSION}/include/linux/jawt_md.h
-opt/openjdk-${TERMUX_PKG_VERSION}/jmods/java.desktop.jmod
-opt/openjdk-${TERMUX_PKG_VERSION}/lib/libawt_xawt.so
-opt/openjdk-${TERMUX_PKG_VERSION}/lib/libfontmanager.so
-opt/openjdk-${TERMUX_PKG_VERSION}/lib/libjawt.so
-opt/openjdk-${TERMUX_PKG_VERSION}/lib/libsplashscreen.so
+lib/jvm/java-17-openjdk/include/jawt.h
+lib/jvm/java-17-openjdk/include/linux/jawt_md.h
+lib/jvm/java-17-openjdk/jmods/java.desktop.jmod
+lib/jvm/java-17-openjdk/lib/libawt_xawt.so
+lib/jvm/java-17-openjdk/lib/libfontmanager.so
+lib/jvm/java-17-openjdk/lib/libjawt.so
+lib/jvm/java-17-openjdk/lib/libsplashscreen.so
 "
 TERMUX_SUBPKG_DESCRIPTION="Portion of openjdk-17 requiring X11 functionality"
-TERMUX_SUBPKG_DEPENDS="fontconfig, freetype, giflib, libandroid-shmem, libpng, libx11, libxext, libxi, libxrandr, libxrender, libxt, libxtst"
-TERMUX_SUBPKG_BREAKS="openjdk-17 (<< 17.0-28)"
+TERMUX_SUBPKG_DEPENDS="freetype, giflib, libandroid-shmem, libjpeg-turbo, libpng, libx11, libxext, libxi, libxrender, libxtst"

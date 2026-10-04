@@ -2,24 +2,20 @@ TERMUX_PKG_HOMEPAGE=https://fly.io
 TERMUX_PKG_DESCRIPTION="Command line tools for fly.io services"
 TERMUX_PKG_LICENSE="Apache-2.0"
 TERMUX_PKG_MAINTAINER="Yaksh Bariya <thunder-coding@termux.dev>"
-TERMUX_PKG_VERSION="0.1.134"
-TERMUX_PKG_SRCURL=https://github.com/superfly/flyctl/archive/v$TERMUX_PKG_VERSION.tar.gz
-TERMUX_PKG_SHA256=25eeb4a93fcde0cfae34817e0e448be8adf9a07e6bac100d1804ad61ffcdfb15
+TERMUX_PKG_VERSION="0.4.111"
+TERMUX_PKG_SRCURL=https://github.com/superfly/flyctl/archive/refs/tags/v$TERMUX_PKG_VERSION.tar.gz
+TERMUX_PKG_SHA256=a1fa2a67283e0c4cf81bc47ab3a3cfc397355d170f43bd22ed613cf240a6019d
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_BUILD_IN_SRC=true
-TERMUX_PKG_BLACKLISTED_ARCHES="i686, arm"
-
+TERMUX_PKG_EXCLUDED_ARCHES="i686, arm"
 
 termux_step_post_get_source() {
 	termux_setup_golang
-	export GOPATH=$TERMUX_PKG_SRCDIR/go
-	export GOOS="android"
-	go get
-	chmod +w $GOPATH -R
+	go mod tidy
+	go mod vendor
 }
 
 termux_step_make() {
-	export GOPATH=$TERMUX_PKG_SRCDIR/go
 	go build -o bin/flyctl
 }
 

@@ -2,12 +2,12 @@ TERMUX_PKG_HOMEPAGE=https://curl.se/
 TERMUX_PKG_DESCRIPTION="Easy-to-use client-side URL transfer library"
 TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="@termux"
-TERMUX_PKG_VERSION="8.5.0"
+TERMUX_PKG_VERSION="8.22.0"
 TERMUX_PKG_SRCURL=https://github.com/curl/curl/releases/download/curl-${TERMUX_PKG_VERSION//./_}/curl-${TERMUX_PKG_VERSION}.tar.xz
-TERMUX_PKG_SHA256=42ab8db9e20d8290a3b633e7fbb3cec15db34df65fd1015ef8ac1e4723750eeb
+TERMUX_PKG_SHA256=f7ef3ae8a22e521f289803fe93543eb64c329b58aa73a9e224dfd915a2a5f4f7
 TERMUX_PKG_AUTO_UPDATE=true
-TERMUX_PKG_UPDATE_VERSION_REGEXP="\d+.\d+.\d+"
-TERMUX_PKG_DEPENDS="libnghttp2, libssh2, openssl (>= 3.0.3), zlib"
+TERMUX_PKG_UPDATE_VERSION_REGEXP="curl-\d+_\d+_\d+(?!-)"
+TERMUX_PKG_DEPENDS="libnghttp2, libnghttp3, libngtcp2, libssh2, openssl (>= 1:3.2.1-1), zlib"
 TERMUX_PKG_BREAKS="libcurl-dev"
 TERMUX_PKG_REPLACES="libcurl-dev"
 TERMUX_PKG_ESSENTIAL=true
@@ -17,12 +17,17 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --with-ca-bundle=$TERMUX_PREFIX/etc/tls/cert.pem
 --with-ca-path=$TERMUX_PREFIX/etc/tls/certs
 --with-nghttp2
+--with-ngtcp2
 --without-libidn
 --without-libidn2
 --without-librtmp
 --without-brotli
---with-ssl
+--without-libpsl
 --with-libssh2
+--with-ssl
+--with-openssl
+--with-nghttp3
+--disable-ares
 "
 
 # https://github.com/termux/termux-packages/issues/15889

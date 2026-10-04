@@ -1,23 +1,23 @@
-This call just slow things done noticably (and permission is denied).
-
-diff -u -r ../zsh-5.0.8/Src/init.c ./Src/init.c
---- ../zsh-5.0.8/Src/init.c	2015-04-26 16:31:15.000000000 -0400
-+++ ./Src/init.c	2015-07-11 17:51:00.761656735 -0400
-@@ -631,7 +631,7 @@
+This call just slows things down noticeably (and permission is denied).
+diff --git a/Src/init.c b/Src/init.c
+index a8ceec1..ccc3806 100644
+--- a/Src/init.c
++++ b/Src/init.c
+@@ -716,7 +716,7 @@ mod_export void
  init_shout(void)
  {
      static char shoutbuf[BUFSIZ];
--#if defined(JOB_CONTROL) && defined(TIOCSETD) && defined(NTTYDISC)
-+#if defined(JOB_CONTROL) && defined(TIOCSETD) && defined(NTTYDISC) && !defined(__ANDROID__)
+-#if defined(TIOCSETD) && defined(NTTYDISC)
++#if defined(TIOCSETD) && defined(NTTYDISC) && !defined(__ANDROID__)
      int ldisc;
  #endif
  
-@@ -642,7 +642,7 @@
+@@ -727,7 +727,7 @@ init_shout(void)
  	return;
      }
  
--#if defined(JOB_CONTROL) && defined(TIOCSETD) && defined(NTTYDISC)
-+#if defined(JOB_CONTROL) && defined(TIOCSETD) && defined(NTTYDISC) && !defined(__ANDROID__)
+-#if defined(TIOCSETD) && defined(NTTYDISC)
++#if defined(TIOCSETD) && defined(NTTYDISC) && !defined(__ANDROID__)
      ldisc = NTTYDISC;
      ioctl(SHTTY, TIOCSETD, (char *)&ldisc);
  #endif
