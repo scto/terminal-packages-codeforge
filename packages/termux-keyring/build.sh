@@ -29,6 +29,7 @@ termux_step_make_install() {
 
 	# Key for pacman package manager.
 	install -Dm600 "$TERMUX_PKG_BUILDER_DIR/termux-pacman.gpg" "$GPG_SHARE_DIR"
+	install -Dm600 "$TERMUX_PKG_BUILDER_DIR/codeforge.gpg" "$GPG_SHARE_DIR"
 
 	# Create symlinks under all GPG_DIRs to key files under GPG_SHARE_DIR
 	for GPG_DIR in "$TERMUX_PREFIX/etc/apt/trusted.gpg.d" "$TERMUX_PREFIX/share/pacman/keyrings"; do
@@ -58,4 +59,3 @@ termux_step_create_debscripts() {
 		echo "post_upgrade" > postinst
 	fi
 }
-	install -Dm600 $TERMUX_PKG_BUILDER_DIR/codeforge.gpg $GPG_SHARE_DIR

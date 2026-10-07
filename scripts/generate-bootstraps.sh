@@ -119,11 +119,16 @@ pull_package() {
 	mkdir -p "$package_tmpdir"
 
 	if [ ${TERMUX_PACKAGE_MANAGER} = "apt" ]; then
-		local package_url
-		package_url="$REPO_BASE_URL/$(echo "${PACKAGE_METADATA[${package_name}]}" | grep -i "^Filename:" | awk '{ print $2 }')"
-		if [ "${package_url}" = "$REPO_BASE_URL" ] || [ "${package_url}" = "${REPO_BASE_URL}/" ]; then
-			echo "[!] Failed to determine URL for package '$package_name'."
-			exit 1
+		local package_url=""
+		if [ -f "${TERMUX_SCRIPTDIR}/packages/${package_name}/${package_name}.deb" ]; then
+			cp "${TERMUX_SCRIPTDIR}/packages/${package_name}/${package_name}.deb" "$package_tmpdir/package.deb"
+		fi
+		if [ ! -f "$package_tmpdir/package.deb" ]; then
+			package_url="$REPO_BASE_URL/$(echo "${PACKAGE_METADATA[${package_name}]}" | grep -i "^Filename:" | awk '{ print $2 }')"
+			if [ "${package_url}" = "$REPO_BASE_URL" ] || [ "${package_url}" = "${REPO_BASE_URL}/" ]; then
+				echo "[!] Failed to determine URL for package '$package_name'."
+				exit 1
+			fi
 		fi
 
 		local package_dependencies
@@ -175,16 +180,19 @@ pull_package() {
 				# Extract files.
 				tar xf "$data_archive" -C "$BOOTSTRAP_ROOTFS"
 				if [ -d "${BOOTSTRAP_ROOTFS}/data/data/com.termux" ]; then
-					mkdir -p "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge"
-					cp -af "${BOOTSTRAP_ROOTFS}/data/data/com.termux/." "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge/"
+					mkdir -p "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge.app"
+					cp -af "${BOOTSTRAP_ROOTFS}/data/data/com.termux/." "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge.app/"
 					rm -rf "${BOOTSTRAP_ROOTFS}/data/data/com.termux"
+				fi
+				if [ -d "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge" ] && [ ! -d "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge.app" ]; then
+					mv "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge" "${BOOTSTRAP_ROOTFS}/data/data/com.codeforge.app"
 				fi
 				mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/var/lib/dpkg/info"
 
 				if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
 					# Register extracted files.
 					tar tf "$data_archive" | sed -E -e 's@^\./@/@' -e 's@^/$@/.@' -e 's@^([^./])@/\1@' > "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/var/lib/dpkg/info/${package_name}.list"
-					sed -i "s/com.termux/com.codeforge/g" "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/var/lib/dpkg/info/${package_name}.list"
+					sed -i "s/com.termux/com.codeforge.app/g" "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/var/lib/dpkg/info/${package_name}.list"
 
 					# Generate checksums (md5).
 					tar xf "$data_archive"
@@ -288,11 +296,11 @@ add_termux_bootstrap_second_stage_files() {
 # Information about symlinks is stored in file SYMLINKS.txt.
 create_bootstrap_archive() {
 	if [ -d "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}" ]; then
-		find "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}" -type f -exec sed -i "s/com.termux/com.codeforge/g" {} + 2>/dev/null || true
+		find "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}" -type f -exec sed -i "s/com.termux/com.codeforge.app/g; s/com.codeforge/com.codeforge.app/g; s/com.codeforge.app.app/com.codeforge.app/g" {} + 2>/dev/null || true
 		find "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}" -type l | while read -r link; do
 			target=$(readlink "$link")
 			if [[ "$target" == *"com.termux"* ]]; then
-				new_target=$(echo "$target" | sed "s/com\.termux/com\.codeforge/g")
+				new_target=$(echo "$target" | sed "s/com\.termux/com\.codeforge\.app/g; s/com\.codeforge/com\.codeforge\.app/g; s/com\.codeforge\.app\.app/com\.codeforge\.app/g")
 				ln -sf "$new_target" "$link"
 			fi
 		done
@@ -511,16 +519,16 @@ for package_arch in "${TERMUX_ARCHITECTURES[@]}"; do
 
 	# Needed for basic installation of build tools in AndroidIDE
 	# Already included in bootstrap: tar, curl
-	pull_package wget
-	pull_package jq
+	#pull_package wget
+	#pull_package jq
 
 	# Necessary packages for AndroidIDE
-	pull_package codeforge-tools
-	pull_package which
-	pull_package file
+	#pull_package codeforge-tools
+	#pull_package which
+	#pull_package file
 
 	# Error in AndroidIDE if these are not included
-	pull_package brotli
+	#pull_package brotli
 	
 	# Handle additional packages.
 	for add_pkg in "${ADDITIONAL_PACKAGES[@]}"; do
@@ -533,4 +541,5 @@ for package_arch in "${TERMUX_ARCHITECTURES[@]}"; do
 
 	# Create bootstrap archive.
 	create_bootstrap_archive "$package_arch"
+	rm -rf "$BOOTSTRAP_ROOTFS" "$BOOTSTRAP_PKGDIR"
 done
