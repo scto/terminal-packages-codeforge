@@ -7,7 +7,7 @@ set -e
 
 export TERMUX_SCRIPTDIR=$(realpath "$(dirname "$(realpath "$0")")/../")
 . $(dirname "$(realpath "$0")")/properties.sh
-BOOTSTRAP_TMPDIR=$(mktemp -d "${TMPDIR:-/data/data/com.termux/files/home/CodeForgeMobile/tmp}/bootstrap-tmp.XXXXXXXX")
+BOOTSTRAP_TMPDIR=$(mktemp -d "${TMPDIR:-/tmp}/bootstrap-tmp.XXXXXXXX")
 trap 'rm -rf $BOOTSTRAP_TMPDIR' EXIT
 
 # By default, bootstrap archives are compatible with Android >=7.0
@@ -314,27 +314,6 @@ create_bootstrap_archive() {
 			rm -f "$link"
 		done < <(find . -type l -print0)
 
-
-        echo "Running recursive sed over extracted text files..."
-        ROOTFS_DIR="."
-        if [ -d "data/data/com.codeforge.app" ]; then ROOTFS_DIR="."; 
-        elif [ -d "rootfs/data/data/com.codeforge.app" ]; then ROOTFS_DIR="rootfs"; 
-        else ROOTFS_DIR=$(dirname $(find . -type d -path "*/data/data/com.codeforge.app" | head -n 1 2>/dev/null) 2>/dev/null || echo "."); fi
-        
-        if [ -d "$ROOTFS_DIR" ]; then
-            find "$ROOTFS_DIR" -type f -exec grep -Iq \. {} \; -print0 | xargs -0 -r -I{} sed -i -e 's/com\.termux/com.codeforge.app/g' -e 's/com\.codeforge\.app\.app/com.codeforge.app/g' {}
-            find "$ROOTFS_DIR" -type l -print0 | while IFS= read -r -d '' link; do
-                target=$(readlink "$link")
-                new_target=$(echo "$target" | sed -e 's/com\.termux/com.codeforge.app/g' -e 's/com\.codeforge\.app\.app/com.codeforge.app/g')
-                if [ "$target" != "$new_target" ]; then
-                    ln -sf "$new_target" "$link"
-                fi
-            done
-            if [ -d "$ROOTFS_DIR/var/lib/dpkg/info" ]; then
-                find "$ROOTFS_DIR/var/lib/dpkg/info" -name "*.list" -type f -print0 | xargs -0 -r sed -i -e 's/com\.termux/com.codeforge.app/g' -e 's/com\.codeforge\.app\.app/com.codeforge.app/g'
-            fi
-        fi
-        
 		zip -r9 "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" ./*
 	)
 
@@ -480,7 +459,7 @@ for package_arch in "${TERMUX_ARCHITECTURES[@]}"; do
 			mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/var/log"
 		fi
 	fi
-	mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/data/data/com.termux/files/home/CodeForgeMobile/tmp"
+	mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/tmp"
 
 	# Read package metadata.
 	unset PACKAGE_METADATA

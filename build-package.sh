@@ -657,12 +657,12 @@ fi
 if [[ "${TERMUX_INSTALL_DEPS-false}" == "true" || "${TERMUX_PACKAGE_LIBRARY-bionic}" == "glibc" ]]; then
 	# Setup PGP keys for verifying integrity of dependencies.
 	# Keys are obtained from our keyring package.
-	gpg --list-keys 27AA7B2C8132839D0744569F17E51EA9F35261FA >/dev/null 2>&1 || {
-    gpg --import "$TERMUX_SCRIPTDIR/packages/termux-keyring/codeforge_pub.gpg"
-    gpg --no-tty --command-file <(echo -e "trust
+	gpg --list-keys 254EBF6F0779750AED050D046D8FE9FC06F05352 >/dev/null 2>&1 || {
+		gpg --import "$TERMUX_SCRIPTDIR/packages/termux-keyring/codeforge_pub.gpg"
+		gpg --no-tty --command-file <(echo -e "trust
 5
-y") --edit-key 27AA7B2C8132839D0744569F17E51EA9F35261FA
-}
+y") --edit-key 254EBF6F0779750AED050D046D8FE9FC06F05352
+	}
 fi
 
 for (( i=0; i < ${#PACKAGE_LIST[@]}; i++ )); do

@@ -9,7 +9,6 @@ TERMUX_PKG_PLATFORM_INDEPENDENT=true
 TERMUX_PKG_ESSENTIAL=true
 
 termux_step_make_install() {
-    install -Dm600 $TERMUX_PKG_BUILDER_DIR/codeforge.gpg $GPG_SHARE_DIR
 	local GPG_SHARE_DIR="$TERMUX_PREFIX/share/termux-keyring"
 
 	# Delete all existing termux-keyring keys
