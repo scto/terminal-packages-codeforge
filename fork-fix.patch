@@ -1,0 +1,3451 @@
+diff --git a/packages/cabal-install/splitmix-patches b/packages/cabal-install/splitmix-patches
+deleted file mode 100644
+index 161e180..0000000
+--- a/packages/cabal-install/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/cabal-install/splitmix-patches b/packages/cabal-install/splitmix-patches
+new file mode 120000
+index 0000000..161e180
+--- /dev/null
++++ b/packages/cabal-install/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/darcs/basement-patches b/packages/darcs/basement-patches
+deleted file mode 100644
+index 7b07262..0000000
+--- a/packages/darcs/basement-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../git-annex/basement-patches
+\ No newline at end of file
+diff --git a/packages/darcs/basement-patches b/packages/darcs/basement-patches
+new file mode 120000
+index 0000000..7b07262
+--- /dev/null
++++ b/packages/darcs/basement-patches
+@@ -0,0 +1 @@
++../git-annex/basement-patches
+\ No newline at end of file
+diff --git a/packages/darcs/cborg-patches b/packages/darcs/cborg-patches
+deleted file mode 100644
+index 04b53c7..0000000
+--- a/packages/darcs/cborg-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../git-annex/cborg-patches
+\ No newline at end of file
+diff --git a/packages/darcs/cborg-patches b/packages/darcs/cborg-patches
+new file mode 120000
+index 0000000..04b53c7
+--- /dev/null
++++ b/packages/darcs/cborg-patches
+@@ -0,0 +1 @@
++../git-annex/cborg-patches
+\ No newline at end of file
+diff --git a/packages/darcs/memory-patches b/packages/darcs/memory-patches
+deleted file mode 100644
+index d1e8538..0000000
+--- a/packages/darcs/memory-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../git-annex/memory-patches
+\ No newline at end of file
+diff --git a/packages/darcs/memory-patches b/packages/darcs/memory-patches
+new file mode 120000
+index 0000000..d1e8538
+--- /dev/null
++++ b/packages/darcs/memory-patches
+@@ -0,0 +1 @@
++../git-annex/memory-patches
+\ No newline at end of file
+diff --git a/packages/darcs/splitmix-patches b/packages/darcs/splitmix-patches
+deleted file mode 100644
+index 8ce1d9d..0000000
+--- a/packages/darcs/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/darcs/splitmix-patches b/packages/darcs/splitmix-patches
+new file mode 120000
+index 0000000..8ce1d9d
+--- /dev/null
++++ b/packages/darcs/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/git-annex/splitmix-patches b/packages/git-annex/splitmix-patches
+deleted file mode 100644
+index 8ce1d9d..0000000
+--- a/packages/git-annex/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/git-annex/splitmix-patches b/packages/git-annex/splitmix-patches
+new file mode 120000
+index 0000000..8ce1d9d
+--- /dev/null
++++ b/packages/git-annex/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/hledger-ui/splitmix-patches b/packages/hledger-ui/splitmix-patches
+deleted file mode 100644
+index 161e180..0000000
+--- a/packages/hledger-ui/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/hledger-ui/splitmix-patches b/packages/hledger-ui/splitmix-patches
+new file mode 120000
+index 0000000..161e180
+--- /dev/null
++++ b/packages/hledger-ui/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/disable-checkhealth-locale-warning.patch b/packages/neovim-nightly/disable-checkhealth-locale-warning.patch
+deleted file mode 100644
+index dd32e52..0000000
+--- a/packages/neovim-nightly/disable-checkhealth-locale-warning.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../neovim/disable-checkhealth-locale-warning.patch
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/disable-checkhealth-locale-warning.patch b/packages/neovim-nightly/disable-checkhealth-locale-warning.patch
+new file mode 120000
+index 0000000..dd32e52
+--- /dev/null
++++ b/packages/neovim-nightly/disable-checkhealth-locale-warning.patch
+@@ -0,0 +1 @@
++../neovim/disable-checkhealth-locale-warning.patch
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/neovim.alternatives b/packages/neovim-nightly/neovim.alternatives
+deleted file mode 100644
+index fccd68c..0000000
+--- a/packages/neovim-nightly/neovim.alternatives
++++ /dev/null
+@@ -1 +0,0 @@
+-../neovim/neovim.alternatives
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/neovim.alternatives b/packages/neovim-nightly/neovim.alternatives
+new file mode 120000
+index 0000000..fccd68c
+--- /dev/null
++++ b/packages/neovim-nightly/neovim.alternatives
+@@ -0,0 +1 @@
++../neovim/neovim.alternatives
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/nvim-shim.sh b/packages/neovim-nightly/nvim-shim.sh
+deleted file mode 100644
+index dba2bfc..0000000
+--- a/packages/neovim-nightly/nvim-shim.sh
++++ /dev/null
+@@ -1 +0,0 @@
+-../neovim/nvim-shim.sh
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/nvim-shim.sh b/packages/neovim-nightly/nvim-shim.sh
+new file mode 120000
+index 0000000..dba2bfc
+--- /dev/null
++++ b/packages/neovim-nightly/nvim-shim.sh
+@@ -0,0 +1 @@
++../neovim/nvim-shim.sh
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch
+deleted file mode 100644
+index 4b0e84f..0000000
+--- a/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../neovim/src-nvim-os-stdpaths.c.patch
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch
+new file mode 120000
+index 0000000..4b0e84f
+--- /dev/null
++++ b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch
+@@ -0,0 +1 @@
++../neovim/src-nvim-os-stdpaths.c.patch
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/sysinit.vim b/packages/neovim-nightly/sysinit.vim
+deleted file mode 100644
+index 6254e62..0000000
+--- a/packages/neovim-nightly/sysinit.vim
++++ /dev/null
+@@ -1 +0,0 @@
+-../neovim/sysinit.vim
+\ No newline at end of file
+diff --git a/packages/neovim-nightly/sysinit.vim b/packages/neovim-nightly/sysinit.vim
+new file mode 120000
+index 0000000..6254e62
+--- /dev/null
++++ b/packages/neovim-nightly/sysinit.vim
+@@ -0,0 +1 @@
++../neovim/sysinit.vim
+\ No newline at end of file
+diff --git a/packages/pandoc/splitmix-patches b/packages/pandoc/splitmix-patches
+deleted file mode 100644
+index 161e180..0000000
+--- a/packages/pandoc/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/pandoc/splitmix-patches b/packages/pandoc/splitmix-patches
+new file mode 120000
+index 0000000..161e180
+--- /dev/null
++++ b/packages/pandoc/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches/
+\ No newline at end of file
+diff --git a/packages/procps/hsearch b/packages/procps/hsearch
+deleted file mode 100644
+index 4ec2578..0000000
+--- a/packages/procps/hsearch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../root-packages/arp-scan/hsearch/
+\ No newline at end of file
+diff --git a/packages/procps/hsearch b/packages/procps/hsearch
+new file mode 120000
+index 0000000..4ec2578
+--- /dev/null
++++ b/packages/procps/hsearch
+@@ -0,0 +1 @@
++../../root-packages/arp-scan/hsearch/
+\ No newline at end of file
+diff --git a/packages/procps/procstat b/packages/procps/procstat
+deleted file mode 100644
+index bee6abe..0000000
+--- a/packages/procps/procstat
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/htop/procstat
+\ No newline at end of file
+diff --git a/packages/procps/procstat b/packages/procps/procstat
+new file mode 120000
+index 0000000..bee6abe
+--- /dev/null
++++ b/packages/procps/procstat
+@@ -0,0 +1 @@
++../../packages/htop/procstat
+\ No newline at end of file
+diff --git a/packages/radarr/remove-happy-eyeballs-connect-callback.patch b/packages/radarr/remove-happy-eyeballs-connect-callback.patch
+deleted file mode 100644
+index 2abe930..0000000
+--- a/packages/radarr/remove-happy-eyeballs-connect-callback.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../sonarr/remove-happy-eyeballs-connect-callback.patch
+\ No newline at end of file
+diff --git a/packages/radarr/remove-happy-eyeballs-connect-callback.patch b/packages/radarr/remove-happy-eyeballs-connect-callback.patch
+new file mode 120000
+index 0000000..2abe930
+--- /dev/null
++++ b/packages/radarr/remove-happy-eyeballs-connect-callback.patch
+@@ -0,0 +1 @@
++../sonarr/remove-happy-eyeballs-connect-callback.patch
+\ No newline at end of file
+diff --git a/packages/shellcheck/splitmix-patches b/packages/shellcheck/splitmix-patches
+deleted file mode 100644
+index 8ce1d9d..0000000
+--- a/packages/shellcheck/splitmix-patches
++++ /dev/null
+@@ -1 +0,0 @@
+-../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/shellcheck/splitmix-patches b/packages/shellcheck/splitmix-patches
+new file mode 120000
+index 0000000..8ce1d9d
+--- /dev/null
++++ b/packages/shellcheck/splitmix-patches
+@@ -0,0 +1 @@
++../hledger/splitmix-patches
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt b/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt
+deleted file mode 100644
+index bcb34a3..0000000
+--- a/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-AGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt b/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt
+new file mode 120000
+index 0000000..bcb34a3
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/AGPL-3.0-only.txt
+@@ -0,0 +1 @@
++AGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt
+deleted file mode 100644
+index bcb34a3..0000000
+--- a/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-AGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt
+new file mode 120000
+index 0000000..bcb34a3
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/AGPL-3.0-or-later.txt
+@@ -0,0 +1 @@
++AGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-2.0-only.txt b/packages/termux-licenses/LICENSES/GPL-2.0-only.txt
+deleted file mode 100644
+index 857f983..0000000
+--- a/packages/termux-licenses/LICENSES/GPL-2.0-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-GPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-2.0-only.txt b/packages/termux-licenses/LICENSES/GPL-2.0-only.txt
+new file mode 120000
+index 0000000..857f983
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/GPL-2.0-only.txt
+@@ -0,0 +1 @@
++GPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt b/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt
+deleted file mode 100644
+index 857f983..0000000
+--- a/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-GPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt b/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt
+new file mode 120000
+index 0000000..857f983
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/GPL-2.0-or-later.txt
+@@ -0,0 +1 @@
++GPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-3.0-only.txt b/packages/termux-licenses/LICENSES/GPL-3.0-only.txt
+deleted file mode 100644
+index 166d97e..0000000
+--- a/packages/termux-licenses/LICENSES/GPL-3.0-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-GPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-3.0-only.txt b/packages/termux-licenses/LICENSES/GPL-3.0-only.txt
+new file mode 120000
+index 0000000..166d97e
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/GPL-3.0-only.txt
+@@ -0,0 +1 @@
++GPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt
+deleted file mode 100644
+index 166d97e..0000000
+--- a/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-GPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt
+new file mode 120000
+index 0000000..166d97e
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/GPL-3.0-or-later.txt
+@@ -0,0 +1 @@
++GPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt b/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt
+deleted file mode 100644
+index 5b5d7c1..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt b/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt
+new file mode 120000
+index 0000000..5b5d7c1
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-2.0-only.txt
+@@ -0,0 +1 @@
++LGPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt
+deleted file mode 100644
+index 5b5d7c1..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt
+new file mode 120000
+index 0000000..5b5d7c1
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-2.0-or-later.txt
+@@ -0,0 +1 @@
++LGPL-2.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt b/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt
+deleted file mode 100644
+index 2bac2a0..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-2.1.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt b/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt
+new file mode 120000
+index 0000000..2bac2a0
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-2.1-only.txt
+@@ -0,0 +1 @@
++LGPL-2.1.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt
+deleted file mode 100644
+index 2bac2a0..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-2.1.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt
+new file mode 120000
+index 0000000..2bac2a0
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-2.1-or-later.txt
+@@ -0,0 +1 @@
++LGPL-2.1.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt b/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt
+deleted file mode 100644
+index 750497e..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt b/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt
+new file mode 120000
+index 0000000..750497e
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-3.0-only.txt
+@@ -0,0 +1 @@
++LGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt
+deleted file mode 100644
+index 750497e..0000000
+--- a/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-LGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt b/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt
+new file mode 120000
+index 0000000..750497e
+--- /dev/null
++++ b/packages/termux-licenses/LICENSES/LGPL-3.0-or-later.txt
+@@ -0,0 +1 @@
++LGPL-3.0.txt
+\ No newline at end of file
+diff --git a/packages/zig/0.14.1 b/packages/zig/0.14.1
+deleted file mode 100644
+index 0548fb4..0000000
+--- a/packages/zig/0.14.1
++++ /dev/null
+@@ -1 +0,0 @@
+-0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/0.14.1 b/packages/zig/0.14.1
+new file mode 120000
+index 0000000..0548fb4
+--- /dev/null
++++ b/packages/zig/0.14.1
+@@ -0,0 +1 @@
++0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/0.15.1 b/packages/zig/0.15.1
+deleted file mode 100644
+index 0548fb4..0000000
+--- a/packages/zig/0.15.1
++++ /dev/null
+@@ -1 +0,0 @@
+-0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/0.15.1 b/packages/zig/0.15.1
+new file mode 120000
+index 0000000..0548fb4
+--- /dev/null
++++ b/packages/zig/0.15.1
+@@ -0,0 +1 @@
++0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/0.15.2 b/packages/zig/0.15.2
+deleted file mode 100644
+index 0548fb4..0000000
+--- a/packages/zig/0.15.2
++++ /dev/null
+@@ -1 +0,0 @@
+-0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/0.15.2 b/packages/zig/0.15.2
+new file mode 120000
+index 0000000..0548fb4
+--- /dev/null
++++ b/packages/zig/0.15.2
+@@ -0,0 +1 @@
++0.14.0
+\ No newline at end of file
+diff --git a/packages/zig/zig-lib-libc-musl-src.patch b/packages/zig/zig-lib-libc-musl-src.patch
+deleted file mode 100644
+index 79e40c8..0000000
+--- a/packages/zig/zig-lib-libc-musl-src.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-0.16.0/zig-lib-libc-musl-src.patch
+\ No newline at end of file
+diff --git a/packages/zig/zig-lib-libc-musl-src.patch b/packages/zig/zig-lib-libc-musl-src.patch
+new file mode 120000
+index 0000000..79e40c8
+--- /dev/null
++++ b/packages/zig/zig-lib-libc-musl-src.patch
+@@ -0,0 +1 @@
++0.16.0/zig-lib-libc-musl-src.patch
+\ No newline at end of file
+diff --git a/packages/zig/zig-lib-std-os-linux.zig.patch b/packages/zig/zig-lib-std-os-linux.zig.patch
+deleted file mode 100644
+index b8f0bff..0000000
+--- a/packages/zig/zig-lib-std-os-linux.zig.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-0.16.0/zig-lib-std-os-linux.zig.patch
+\ No newline at end of file
+diff --git a/packages/zig/zig-lib-std-os-linux.zig.patch b/packages/zig/zig-lib-std-os-linux.zig.patch
+new file mode 120000
+index 0000000..b8f0bff
+--- /dev/null
++++ b/packages/zig/zig-lib-std-os-linux.zig.patch
+@@ -0,0 +1 @@
++0.16.0/zig-lib-std-os-linux.zig.patch
+\ No newline at end of file
+diff --git a/scripts/aptly_api.sh b/scripts/aptly_api.sh
+index 1aa36ee..43a5fd1 100644
+--- a/scripts/aptly_api.sh
++++ b/scripts/aptly_api.sh
+@@ -6,7 +6,7 @@ CURL_COMMON_OPTIONS=(
+   --silent
+   --retry 2
+   --retry-delay 3
+-  --user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)'
++  --user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)'
+   --user "${APTLY_API_AUTH}"
+   --write-out "|%{http_code}"
+ )
+diff --git a/scripts/bin/check-auto-update b/scripts/bin/check-auto-update
+index d57e1b3..cbc7546 100755
+--- a/scripts/bin/check-auto-update
++++ b/scripts/bin/check-auto-update
+@@ -147,7 +147,7 @@ repology() {
+ 	if [[ -z "${UNIQUE_PACKAGES[*]}" ]]; then
+ 		# NOTE: mapfile requires bash 4+
+ 		mapfile -t UNIQUE_PACKAGES < <(
+-			curl -A "Termux update checker 1.1 (github.com/termux/termux-packages)" \
++			curl -A "Termux update checker 1.1 (github.com/termux/termux-packages)" \
+ 				--silent --location --retry 5 \
+ 				--retry-delay 5 --retry-max-time 60 \
+ 				"https://repology.org/api/v1/projects/?inrepo=termux&&repos=1" |
+diff --git a/scripts/bootstrap/termux-bootstrap-second-stage.sh b/scripts/bootstrap/termux-bootstrap-second-stage.sh
+index faca194..723993d 100644
+--- a/scripts/bootstrap/termux-bootstrap-second-stage.sh
++++ b/scripts/bootstrap/termux-bootstrap-second-stage.sh
+@@ -67,7 +67,7 @@ the lock file manually and run `@TERMUX_BOOTSTRAP__BOOTSTRAP_SECOND_STAGE_ENTRY_
+ again.
+ 
+ **See also:**
+-- https://github.com/termux/termux-packages/wiki/For-maintainers#bootstraps
++- https://github.com/termux/termux-packages/wiki/For-maintainers#bootstraps
+ HELP_EOF
+ 
+ }
+@@ -339,7 +339,7 @@ run_package_postinst_maintainer_scripts() {
+ 					# which may cause problems for packages which try
+ 					# to use Android rootfs paths instead of Termux
+ 					# rootfs paths.
+-					# - https://github.com/termux/termux-packages/blob/953b9f2aac0dc94f3b99b2df6af898e0a95d5460/packages/pacman/util.c.patch
++					# - https://github.com/termux/termux-packages/blob/953b9f2aac0dc94f3b99b2df6af898e0a95d5460/packages/pacman/util.c.patch
+ 					cd "/" || exit $?
+ 
+ 					# Source the package `install` file and execute
+@@ -437,7 +437,7 @@ warn_if_process_killed() {
+ 	if [[ "$return_value" == "137" ]]; then
+ 		log_error "The '$command' command was apparently killed with SIGKILL (signal 9). \
+ This may have been due to the security policies of the Android OS installed on your device.
+-Check https://github.com/termux/termux-app/issues/4219 for more info."
++Check https://github.com/termux/termux-app/issues/4219 for more info."
+ 		return 0
+ 	fi
+ 
+diff --git a/scripts/build-bootstraps.sh b/scripts/build-bootstraps.sh
+index da0bfdc..db493d3 100755
+--- a/scripts/build-bootstraps.sh
++++ b/scripts/build-bootstraps.sh
+@@ -308,7 +308,7 @@ Available command_options:
+ 
+ 
+ The package name/prefix that the bootstrap is built for is defined by
+-TERMUX_APP_PACKAGE in 'scrips/properties.sh'. It defaults to 'com.codeforge'.
++TERMUX_APP_PACKAGE in 'scrips/properties.sh'. It defaults to 'com.codeforge.app'.
+ If package name is changed, make sure to run
+ `./scripts/run-docker.sh ./clean.sh` or pass '-f' to force rebuild of packages.
+ 
+diff --git a/scripts/build/configure/termux_step_configure_autotools.sh b/scripts/build/configure/termux_step_configure_autotools.sh
+index d482520..aaa75c3 100644
+--- a/scripts/build/configure/termux_step_configure_autotools.sh
++++ b/scripts/build/configure/termux_step_configure_autotools.sh
+@@ -46,7 +46,7 @@ termux_step_configure_autotools() {
+ 	# Avoid gnulib wrapping of functions when cross compiling. See
+ 	# http://wiki.osdev.org/Cross-Porting_Software#Gnulib
+ 	# https://gitlab.com/sortix/sortix/wikis/Gnulib
+-	# https://github.com/termux/termux-packages/issues/76
++	# https://github.com/termux/termux-packages/issues/76
+ 	local AVOID_GNULIB=""
+ 	AVOID_GNULIB+=" ac_cv_func_nl_langinfo=yes"
+ 	AVOID_GNULIB+=" ac_cv_func_calloc_0_nonnull=yes"
+diff --git a/scripts/build/configure/termux_step_configure_cabal.sh b/scripts/build/configure/termux_step_configure_cabal.sh
+index d9f755c..e741645 100644
+--- a/scripts/build/configure/termux_step_configure_cabal.sh
++++ b/scripts/build/configure/termux_step_configure_cabal.sh
+@@ -10,7 +10,7 @@ termux_step_configure_cabal() {
+ 	# Avoid gnulib wrapping of functions when cross compiling. See
+ 	# http://wiki.osdev.org/Cross-Porting_Software#Gnulib
+ 	# https://gitlab.com/sortix/sortix/wikis/Gnulib
+-	# https://github.com/termux/termux-packages/issues/76
++	# https://github.com/termux/termux-packages/issues/76
+ 	AVOID_GNULIB=""
+ 	AVOID_GNULIB+=" ac_cv_func_nl_langinfo=yes"
+ 	AVOID_GNULIB+=" ac_cv_func_calloc_0_nonnull=yes"
+diff --git a/scripts/build/setup/termux_setup_flang.sh b/scripts/build/setup/termux_setup_flang.sh
+index 0ec715f..bd877aa 100644
+--- a/scripts/build/setup/termux_setup_flang.sh
++++ b/scripts/build/setup/termux_setup_flang.sh
+@@ -32,7 +32,7 @@ bc4f9f54183273ddc2b4f927416b9af939000b0923a0db997366dcf4fc2e334e  package-flang-
+ 	while read -r __checksum __file; do
+ 		if [ "$__checksum" == "" ]; then continue; fi
+ 		termux_download \
+-			https://github.com/termux/ndk-toolchain-clang-with-flang/releases/download/"$__version"/"$__file" \
++			https://github.com/termux/ndk-toolchain-clang-with-flang/releases/download/"$__version"/"$__file" \
+ 			"$__cache_dir/$__file" "$__checksum"
+ 	done <<< "$__sha256sums"
+ 
+diff --git a/scripts/build/setup/termux_setup_ghc.sh b/scripts/build/setup/termux_setup_ghc.sh
+index ed1354a..a34ec14 100644
+--- a/scripts/build/setup/termux_setup_ghc.sh
++++ b/scripts/build/setup/termux_setup_ghc.sh
+@@ -30,7 +30,7 @@ termux_setup_ghc() {
+ 		[[ "$TERMUX_ARCH" == "arm" ]] && target="armv7a-linux-androideabi"
+ 
+ 		local release_tag="$TERMUX_GHC_VERSION"+patch1
+-		termux_download "https://github.com/termux/ghc-cross-tools/releases/download/ghc-v$release_tag/ghc-$TERMUX_GHC_VERSION-$target.tar.xz" \
++		termux_download "https://github.com/termux/ghc-cross-tools/releases/download/ghc-v$release_tag/ghc-$TERMUX_GHC_VERSION-$target.tar.xz" \
+ 			"$TERMUX_GHC_TAR" \
+ 			"${checksums[$TERMUX_ARCH]}"
+ 
+diff --git a/scripts/build/termux_step_massage.sh b/scripts/build/termux_step_massage.sh
+index a90b32c..9f36ece 100644
+--- a/scripts/build/termux_step_massage.sh
++++ b/scripts/build/termux_step_massage.sh
+@@ -233,7 +233,7 @@ termux_step_massage() {
+ 
+ 	# Check so that package is not affected by
+ 	# https://github.com/android/ndk/issues/1614
+-	# https://github.com/termux/termux-packages/issues/9944
++	# https://github.com/termux/termux-packages/issues/9944
+ 	if [[ "${TERMUX_PACKAGE_LIBRARY}" == "bionic" ]]; then
+ 		echo "INFO: READELF=${READELF} ... $(command -v ${READELF})"
+ 		export pattern_file_undef=$(mktemp)
+diff --git a/scripts/build/termux_step_setup_cgct_environment.sh b/scripts/build/termux_step_setup_cgct_environment.sh
+index 4e57dfa..0a78fb7 100644
+--- a/scripts/build/termux_step_setup_cgct_environment.sh
++++ b/scripts/build/termux_step_setup_cgct_environment.sh
+@@ -40,7 +40,7 @@ termux_install_temporary_glibc() {
+ 
+ 	[ ! "$TERMUX_QUIET_BUILD" = "true" ] && echo "Installing temporary '${PKG}' for the CGCT tool environment."
+ 
+-	local PREFIX_TMP_GLIBC="data/data/com.codeforge/files/usr/glibc"
++	local PREFIX_TMP_GLIBC="data/data/com.termux/files/usr/glibc"
+ 	local PATH_TMP_GLIBC="$TERMUX_COMMON_CACHEDIR/temporary_glibc_for_cgct"
+ 	mkdir -p "$PATH_TMP_GLIBC"
+ 
+diff --git a/scripts/build/termux_step_start_build.sh b/scripts/build/termux_step_start_build.sh
+index 28a40db..e392f64 100644
+--- a/scripts/build/termux_step_start_build.sh
++++ b/scripts/build/termux_step_start_build.sh
+@@ -130,7 +130,7 @@ termux_step_start_build() {
+ 			local TERMUX_ELF_CLEANER_VERSION
+ 			TERMUX_ELF_CLEANER_VERSION=$(bash -c ". $TERMUX_SCRIPTDIR/packages/termux-elf-cleaner/build.sh; echo \$TERMUX_PKG_VERSION")
+ 			termux_download \
+-				"https://github.com/termux/termux-elf-cleaner/releases/download/v${TERMUX_ELF_CLEANER_VERSION}/termux-elf-cleaner" \
++				"https://github.com/termux/termux-elf-cleaner/releases/download/v${TERMUX_ELF_CLEANER_VERSION}/termux-elf-cleaner" \
+ 				"$TERMUX_ELF_CLEANER" \
+ 				59645fb25b84d11f108436e83d9df5e874ba4eb76ab62948869a23a3ee692fa7
+ 			chmod u+x "$TERMUX_ELF_CLEANER"
+diff --git a/scripts/build/toolchain/termux_setup_toolchain_23c.sh b/scripts/build/toolchain/termux_setup_toolchain_23c.sh
+index d4367ec..2ebb37d 100644
+--- a/scripts/build/toolchain/termux_setup_toolchain_23c.sh
++++ b/scripts/build/toolchain/termux_setup_toolchain_23c.sh
+@@ -52,7 +52,7 @@ termux_setup_toolchain_23c() {
+ 		# From $NDK/docs/CPU-ARCH-ABIS.html:
+ 		CFLAGS+=" -march=i686 -msse3 -mstackrealign -mfpmath=sse"
+ 		# i686 seem to explicitly require -fPIC, see
+-		# https://github.com/termux/termux-packages/issues/7215#issuecomment-906154438
++		# https://github.com/termux/termux-packages/issues/7215#issuecomment-906154438
+ 		CFLAGS+=" -fPIC"
+ 		export GOARCH=386
+ 		export GO386=sse2
+diff --git a/scripts/build/toolchain/termux_setup_toolchain_30.sh b/scripts/build/toolchain/termux_setup_toolchain_30.sh
+index 07fee25..b2df6ff 100644
+--- a/scripts/build/toolchain/termux_setup_toolchain_30.sh
++++ b/scripts/build/toolchain/termux_setup_toolchain_30.sh
+@@ -52,7 +52,7 @@ termux_setup_toolchain_30() {
+ 		# From $NDK/docs/CPU-ARCH-ABIS.html:
+ 		CFLAGS+=" -march=i686 -msse3 -mstackrealign -mfpmath=sse"
+ 		# i686 seem to explicitly require -fPIC, see
+-		# https://github.com/termux/termux-packages/issues/7215#issuecomment-906154438
++		# https://github.com/termux/termux-packages/issues/7215#issuecomment-906154438
+ 		CFLAGS+=" -fPIC"
+ 		export GOARCH=386
+ 		export GO386=sse2
+diff --git a/scripts/test-runner.sh b/scripts/test-runner.sh
+index 53c493d..b2e6f52 100755
+--- a/scripts/test-runner.sh
++++ b/scripts/test-runner.sh
+@@ -1,4 +1,4 @@
+-#!/data/data/com.codeforge/files/usr/bin/bash
++#!/data/data/com.codeforge.app/files/usr/bin/bash
+ 
+ if [ $# != 1 ]; then
+ 	echo "Specify package to run tests for as only argument"
+diff --git a/scripts/updates/api/dump-repology-data b/scripts/updates/api/dump-repology-data
+index 9a736d9..d08db9b 100755
+--- a/scripts/updates/api/dump-repology-data
++++ b/scripts/updates/api/dump-repology-data
+@@ -49,7 +49,7 @@ def get_repology_data(last_project, project):
+     else:
+         url = f"{url}/projects/{last_project}{'/' if last_project != '' else ''}?inrepo=termux&outdated=1&families_newest=2-"
+ 
+-    repology_data = requests_get(url, timeout=60, headers={'User-Agent': 'Termux update checker 1.0 (github.com/termux/termux-packages)'}).json()
++    repology_data = requests_get(url, timeout=60, headers={'User-Agent': 'Termux update checker 1.0 (github.com/termux/termux-packages)'}).json()
+     # NOTE: We are using `families_newest=2-` so that api will return a
+     # package as outdated if it is so in 2 or more
+     # repo family. This helps us avoid false positives.
+diff --git a/scripts/updates/api/termux_github_api_get_tag.sh b/scripts/updates/api/termux_github_api_get_tag.sh
+index 88d46e1..a5c583c 100644
+--- a/scripts/updates/api/termux_github_api_get_tag.sh
++++ b/scripts/updates/api/termux_github_api_get_tag.sh
+@@ -33,7 +33,7 @@ termux_github_api_get_tag() {
+ 		-H "X-GitHub-Api-Version: 2022-11-28"
+ 		-H "Accept: application/vnd.github.v3+json"
+ 		-H "Authorization: token ${GITHUB_TOKEN}"
+-		-A "Termux update checker 1.1 (github.com/termux/termux-packages)"
++		-A "Termux update checker 1.1 (github.com/termux/termux-packages)"
+ 		--silent
+ 		--location
+ 		--retry 10
+diff --git a/scripts/updates/api/termux_gitlab_api_get_tag.sh b/scripts/updates/api/termux_gitlab_api_get_tag.sh
+index adf9177..2a08a8b 100644
+--- a/scripts/updates/api/termux_gitlab_api_get_tag.sh
++++ b/scripts/updates/api/termux_gitlab_api_get_tag.sh
+@@ -30,7 +30,7 @@ termux_gitlab_api_get_tag() {
+ 	# for unauthenticated users and non-protected paths which should be more than enough for our needs.
+ 	# see: https://docs.gitlab.com/administration/settings/rate_limits_on_raw_endpoints/
+ 	local -a curl_opts=(
+-		-A "Termux update checker 1.1 (github.com/termux/termux-packages)"
++		-A "Termux update checker 1.1 (github.com/termux/termux-packages)"
+ 		--silent
+ 		--location
+ 		--retry 10
+diff --git a/scripts/updates/termux_pkg_auto_update.sh b/scripts/updates/termux_pkg_auto_update.sh
+index 6993fd8..9e29f7c 100644
+--- a/scripts/updates/termux_pkg_auto_update.sh
++++ b/scripts/updates/termux_pkg_auto_update.sh
+@@ -20,7 +20,7 @@ termux_pkg_get_update_method() {
+ 	# GitHub Actions with HTTP 403 errors in January 2026.
+ 	# Example command failing in GitHub Actions:
+ 	# curl https://gitlab.gnome.org/api/v4/projects/GNOME%2Fvte/releases/permalink/latest
+-	# See: https://github.com/termux/termux-packages/issues/28242
++	# See: https://github.com/termux/termux-packages/issues/28242
+ 	if [[ -z "${TERMUX_PKG_UPDATE_METHOD:-}" ]]; then
+ 		if [[ "${project_host}" == "github.com" ]]; then
+ 			TERMUX_PKG_UPDATE_METHOD="github"
+diff --git a/scripts/utils/termux_audit_published_conflicts.sh b/scripts/utils/termux_audit_published_conflicts.sh
+index 19f0857..e33aa85 100644
+--- a/scripts/utils/termux_audit_published_conflicts.sh
++++ b/scripts/utils/termux_audit_published_conflicts.sh
+@@ -87,7 +87,7 @@ for repo in $(jq --raw-output 'del(.pkg_format) | keys | .[]' repo.json); do
+ 		if [[ ! -f "Contents-${repo}-${arch}" ]]; then
+ 			echo "[*] Downloading ${url}/dists/${distribution}/Contents-${arch}.gz" >&2
+ 			curl -s \
+-				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
++				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
+ 				"${url}/dists/${distribution}/Contents-${arch}.gz" \
+ 				-o "Contents-${repo}-${arch}.gz"
+ 			gunzip -k "Contents-${repo}-${arch}.gz"
+diff --git a/scripts/utils/termux_check_file_conflicts.sh b/scripts/utils/termux_check_file_conflicts.sh
+index c71231b..d2e30e5 100644
+--- a/scripts/utils/termux_check_file_conflicts.sh
++++ b/scripts/utils/termux_check_file_conflicts.sh
+@@ -90,7 +90,7 @@ for repo in $(jq --raw-output 'del(.pkg_format) | keys | .[]' repo.json); do
+ 		if [[ ! -f "Packages-${repo}-${arch}" ]]; then
+ 			echo "[*] Downloading ${url}/dists/${distribution}/${component}/binary-${arch}/Packages.bz2"
+ 			curl -s \
+-				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
++				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
+ 				"${url}/dists/${distribution}/${component}/binary-${arch}/Packages.bz2" \
+ 				-o "Packages-${repo}-${arch}.bz2"
+ 			7z x "Packages-${repo}-${arch}.bz2" > /dev/null
+@@ -98,7 +98,7 @@ for repo in $(jq --raw-output 'del(.pkg_format) | keys | .[]' repo.json); do
+ 		if [[ ! -f "Contents-${repo}-${arch}" ]]; then
+ 			echo "[*] Downloading ${url}/dists/${distribution}/Contents-${arch}.gz"
+ 			curl -s \
+-				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
++				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
+ 				"${url}/dists/${distribution}/Contents-${arch}.gz" \
+ 				-o "Contents-${repo}-${arch}.gz"
+ 			gunzip -k "Contents-${repo}-${arch}.gz"
+diff --git a/scripts/utils/termux_reuse_pr_build_artifacts.sh b/scripts/utils/termux_reuse_pr_build_artifacts.sh
+index ddb63cd..1d176d1 100644
+--- a/scripts/utils/termux_reuse_pr_build_artifacts.sh
++++ b/scripts/utils/termux_reuse_pr_build_artifacts.sh
+@@ -124,7 +124,7 @@ readarray -t COMMITS < <(git rev-list --no-merges "$OLD_COMMIT..$HEAD_COMMIT" ||
+ 			 .edges[0].node.body)' <<< "$RESPONSE" || :)
+ 	[[ -n "${PR_HEAD_COMMIT:-}" ]] || infoexit "failed to read associated PR head commit, not performing CI fast path"
+ 
+-	echo "::group::Detected PR #${PRS[0]}: ${PR_COMMIT_TITLE} — https://github.com/termux/termux-packages/pull/${PRS[0]}"
++	echo "::group::Detected PR #${PRS[0]}: ${PR_COMMIT_TITLE} — https://github.com/termux/termux-packages/pull/${PRS[0]}"
+ 	echo "${PR_COMMIT_BODY}"
+ 	echo "::endgroup::"
+ 
+@@ -231,7 +231,7 @@ readarray -t COMMITS < <(git rev-list --no-merges "$OLD_COMMIT..$HEAD_COMMIT" ||
+ 				| .workflowRun.databaseId][0] // empty' <<< "$RESPONSE" || :
+ 		)"
+ 		if [[ -n "${WORKFLOW_ID}" ]]; then
+-			echo "We can safely reuse CI artifacts from https://github.com/termux/termux-packages/actions/runs/${WORKFLOW_ID}"
++			echo "We can safely reuse CI artifacts from https://github.com/termux/termux-packages/actions/runs/${WORKFLOW_ID}"
+ 			if download_ci_artifacts "${WORKFLOW_ID}"; then
+ 				# Notify CI about skipping packages building because we reuse PR artifact.
+ 				echo "skip-building=true" >> "${GITHUB_OUTPUT:-/dev/null}"
+@@ -288,7 +288,7 @@ readarray -t COMMITS < <(git rev-list --no-merges "$OLD_COMMIT..$HEAD_COMMIT" ||
+ 		[[ -z "${WORKFLOW_ID:-}" ]] || break
+ 	done
+ 	if [[ -n "${WORKFLOW_ID}" ]]; then
+-		echo "We can safely reuse CI artifacts from https://github.com/termux/termux-packages/actions/runs/${WORKFLOW_ID}"
++		echo "We can safely reuse CI artifacts from https://github.com/termux/termux-packages/actions/runs/${WORKFLOW_ID}"
+ 		echo "CI artifact URL is $(ci_artifact_url "${WORKFLOW_ID}" || infoexit "Failed to get CI artifact URL")"
+ 	else
+ 		echo "We can not reuse CI artifacts since no relevant CI runs were found"
+diff --git a/x11-packages/emacs-x/Makefile.patch b/x11-packages/emacs-x/Makefile.patch
+deleted file mode 100644
+index 73ad0e1..0000000
+--- a/x11-packages/emacs-x/Makefile.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/Makefile.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/Makefile.patch b/x11-packages/emacs-x/Makefile.patch
+new file mode 120000
+index 0000000..73ad0e1
+--- /dev/null
++++ b/x11-packages/emacs-x/Makefile.patch
+@@ -0,0 +1 @@
++../../packages/emacs/Makefile.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/disable-fdsan.patch b/x11-packages/emacs-x/disable-fdsan.patch
+deleted file mode 100644
+index abd7706..0000000
+--- a/x11-packages/emacs-x/disable-fdsan.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/disable-fdsan.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/disable-fdsan.patch b/x11-packages/emacs-x/disable-fdsan.patch
+new file mode 120000
+index 0000000..abd7706
+--- /dev/null
++++ b/x11-packages/emacs-x/disable-fdsan.patch
+@@ -0,0 +1 @@
++../../packages/emacs/disable-fdsan.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/emacs.alternatives b/x11-packages/emacs-x/emacs.alternatives
+deleted file mode 100644
+index fb8ceea..0000000
+--- a/x11-packages/emacs-x/emacs.alternatives
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/emacs.alternatives
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/emacs.alternatives b/x11-packages/emacs-x/emacs.alternatives
+new file mode 120000
+index 0000000..fb8ceea
+--- /dev/null
++++ b/x11-packages/emacs-x/emacs.alternatives
+@@ -0,0 +1 @@
++../../packages/emacs/emacs.alternatives
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild b/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild
+deleted file mode 100644
+index f2892db..0000000
+--- a/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lib-src-Makefile.in.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild b/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild
+new file mode 120000
+index 0000000..f2892db
+--- /dev/null
++++ b/x11-packages/emacs-x/lib-src-Makefile.in.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lib-src-Makefile.in.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lib-src-emacsclient.c.patch b/x11-packages/emacs-x/lib-src-emacsclient.c.patch
+deleted file mode 100644
+index bb8992b..0000000
+--- a/x11-packages/emacs-x/lib-src-emacsclient.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lib-src-emacsclient.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lib-src-emacsclient.c.patch b/x11-packages/emacs-x/lib-src-emacsclient.c.patch
+new file mode 120000
+index 0000000..bb8992b
+--- /dev/null
++++ b/x11-packages/emacs-x/lib-src-emacsclient.c.patch
+@@ -0,0 +1 @@
++../../packages/emacs/lib-src-emacsclient.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild
+deleted file mode 100644
+index 1d24104..0000000
+--- a/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-cus-start.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild
+new file mode 120000
+index 0000000..1d24104
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-cus-start.el.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-cus-start.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild b/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild
+deleted file mode 100644
+index b919443..0000000
+--- a/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-loadup.el-2.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild b/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild
+new file mode 120000
+index 0000000..b919443
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-loadup.el-2.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-loadup.el-2.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild
+deleted file mode 100644
+index 8d31fa5..0000000
+--- a/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-net-tramp.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild
+new file mode 120000
+index 0000000..8d31fa5
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-net-tramp.el.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-net-tramp.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild
+deleted file mode 100644
+index e803447..0000000
+--- a/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-server.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild
+new file mode 120000
+index 0000000..e803447
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-server.el.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-server.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild
+deleted file mode 100644
+index deb1d2e..0000000
+--- a/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-term.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild
+new file mode 120000
+index 0000000..deb1d2e
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-term.el.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-term.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild
+deleted file mode 100644
+index bb77f97..0000000
+--- a/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp-textmodes-ispell.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild b/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild
+new file mode 120000
+index 0000000..bb77f97
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp-textmodes-ispell.el.patch.beforehostbuild
+@@ -0,0 +1 @@
++../../packages/emacs/lisp-textmodes-ispell.el.patch.beforehostbuild
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp.Makefile.in.patch b/x11-packages/emacs-x/lisp.Makefile.in.patch
+deleted file mode 100644
+index 0506036..0000000
+--- a/x11-packages/emacs-x/lisp.Makefile.in.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/lisp.Makefile.in.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/lisp.Makefile.in.patch b/x11-packages/emacs-x/lisp.Makefile.in.patch
+new file mode 120000
+index 0000000..0506036
+--- /dev/null
++++ b/x11-packages/emacs-x/lisp.Makefile.in.patch
+@@ -0,0 +1 @@
++../../packages/emacs/lisp.Makefile.in.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/no_user_fullname.patch b/x11-packages/emacs-x/no_user_fullname.patch
+deleted file mode 100644
+index 0420832..0000000
+--- a/x11-packages/emacs-x/no_user_fullname.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/no_user_fullname.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/no_user_fullname.patch b/x11-packages/emacs-x/no_user_fullname.patch
+new file mode 120000
+index 0000000..0420832
+--- /dev/null
++++ b/x11-packages/emacs-x/no_user_fullname.patch
+@@ -0,0 +1 @@
++../../packages/emacs/no_user_fullname.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/site-start.el b/x11-packages/emacs-x/site-start.el
+deleted file mode 100644
+index 1fce51d..0000000
+--- a/x11-packages/emacs-x/site-start.el
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/site-start.el
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/site-start.el b/x11-packages/emacs-x/site-start.el
+new file mode 120000
+index 0000000..1fce51d
+--- /dev/null
++++ b/x11-packages/emacs-x/site-start.el
+@@ -0,0 +1 @@
++../../packages/emacs/site-start.el
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/src-callproc.c.patch b/x11-packages/emacs-x/src-callproc.c.patch
+deleted file mode 100644
+index db9e5f8..0000000
+--- a/x11-packages/emacs-x/src-callproc.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/src-callproc.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/src-callproc.c.patch b/x11-packages/emacs-x/src-callproc.c.patch
+new file mode 120000
+index 0000000..db9e5f8
+--- /dev/null
++++ b/x11-packages/emacs-x/src-callproc.c.patch
+@@ -0,0 +1 @@
++../../packages/emacs/src-callproc.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/src-fileio.c.patch b/x11-packages/emacs-x/src-fileio.c.patch
+deleted file mode 100644
+index 4b10170..0000000
+--- a/x11-packages/emacs-x/src-fileio.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/emacs/src-fileio.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/emacs-x/src-fileio.c.patch b/x11-packages/emacs-x/src-fileio.c.patch
+new file mode 120000
+index 0000000..4b10170
+--- /dev/null
++++ b/x11-packages/emacs-x/src-fileio.c.patch
+@@ -0,0 +1 @@
++../../packages/emacs/src-fileio.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/ffplay/configure.patch b/x11-packages/ffplay/configure.patch
+deleted file mode 100644
+index 1995821..0000000
+--- a/x11-packages/ffplay/configure.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/ffmpeg/configure.patch
+\ No newline at end of file
+diff --git a/x11-packages/ffplay/configure.patch b/x11-packages/ffplay/configure.patch
+new file mode 120000
+index 0000000..1995821
+--- /dev/null
++++ b/x11-packages/ffplay/configure.patch
+@@ -0,0 +1 @@
++../../packages/ffmpeg/configure.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch b/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch
+deleted file mode 100644
+index 942501e..0000000
+--- a/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch b/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch
+new file mode 120000
+index 0000000..942501e
+--- /dev/null
++++ b/x11-packages/librewolf/0001-configure-treat-termux-as-linux.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0002-configure-fix-arm-options.patch b/x11-packages/librewolf/0002-configure-fix-arm-options.patch
+deleted file mode 100644
+index cd39da2..0000000
+--- a/x11-packages/librewolf/0002-configure-fix-arm-options.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0002-configure-fix-arm-options.patch b/x11-packages/librewolf/0002-configure-fix-arm-options.patch
+new file mode 120000
+index 0000000..cd39da2
+--- /dev/null
++++ b/x11-packages/librewolf/0002-configure-fix-arm-options.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0003-configure-fix-rustflags.patch b/x11-packages/librewolf/0003-configure-fix-rustflags.patch
+deleted file mode 100644
+index e1a9bf3..0000000
+--- a/x11-packages/librewolf/0003-configure-fix-rustflags.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0003-configure-fix-rustflags.patch b/x11-packages/librewolf/0003-configure-fix-rustflags.patch
+new file mode 120000
+index 0000000..e1a9bf3
+--- /dev/null
++++ b/x11-packages/librewolf/0003-configure-fix-rustflags.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch
+deleted file mode 100644
+index 782404d..0000000
+--- a/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch
+new file mode 120000
+index 0000000..782404d
+--- /dev/null
++++ b/x11-packages/librewolf/0004-configure-do-not-check-libstdcxx-headers.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch b/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch
+deleted file mode 100644
+index 18f18ef..0000000
+--- a/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch b/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch
+new file mode 120000
+index 0000000..18f18ef
+--- /dev/null
++++ b/x11-packages/librewolf/0005-configure-do-not-append-sysroot.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch b/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch
+deleted file mode 100644
+index 5180da2..0000000
+--- a/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch b/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch
+new file mode 120000
+index 0000000..5180da2
+--- /dev/null
++++ b/x11-packages/librewolf/0006-configure-do-not-enable-alsa.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch b/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch
+deleted file mode 100644
+index c0ccc2b..0000000
+--- a/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch b/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch
+new file mode 120000
+index 0000000..c0ccc2b
+--- /dev/null
++++ b/x11-packages/librewolf/0007-fix-link-with-libcxx-18.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0008-fix-macros.patch b/x11-packages/librewolf/0008-fix-macros.patch
+deleted file mode 100644
+index 864a131..0000000
+--- a/x11-packages/librewolf/0008-fix-macros.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0008-fix-macros.patch b/x11-packages/librewolf/0008-fix-macros.patch
+new file mode 120000
+index 0000000..864a131
+--- /dev/null
++++ b/x11-packages/librewolf/0008-fix-macros.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0009-impl-posix-shmem.patch b/x11-packages/librewolf/0009-impl-posix-shmem.patch
+deleted file mode 100644
+index cceea51..0000000
+--- a/x11-packages/librewolf/0009-impl-posix-shmem.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0009-impl-posix-shmem.patch b/x11-packages/librewolf/0009-impl-posix-shmem.patch
+new file mode 120000
+index 0000000..cceea51
+--- /dev/null
++++ b/x11-packages/librewolf/0009-impl-posix-shmem.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch
+deleted file mode 100644
+index e2b253b..0000000
+--- a/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch
+new file mode 120000
+index 0000000..e2b253b
+--- /dev/null
++++ b/x11-packages/librewolf/0010-do-not-check-time_t-for-system-libevent.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch b/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch
+deleted file mode 100644
+index 414efa0..0000000
+--- a/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch b/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch
+new file mode 120000
+index 0000000..414efa0
+--- /dev/null
++++ b/x11-packages/librewolf/0011-use-UnderrunHandlerNoop.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch b/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch
+deleted file mode 100644
+index b8a7728..0000000
+--- a/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch b/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch
+new file mode 120000
+index 0000000..b8a7728
+--- /dev/null
++++ b/x11-packages/librewolf/0012-do-not-use-adaptive-mutex.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0013-fix-rust-compile.patch b/x11-packages/librewolf/0013-fix-rust-compile.patch
+deleted file mode 100644
+index db4aee8..0000000
+--- a/x11-packages/librewolf/0013-fix-rust-compile.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0013-fix-rust-compile.patch b/x11-packages/librewolf/0013-fix-rust-compile.patch
+new file mode 120000
+index 0000000..db4aee8
+--- /dev/null
++++ b/x11-packages/librewolf/0013-fix-rust-compile.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch
+deleted file mode 100644
+index 3ea8ddc..0000000
+--- a/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch
+new file mode 120000
+index 0000000..3ea8ddc
+--- /dev/null
++++ b/x11-packages/librewolf/0014-unset-thread-priority-scheduling-macro.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0015-protobuf-no-android-log.patch b/x11-packages/librewolf/0015-protobuf-no-android-log.patch
+deleted file mode 100644
+index 96f1c6a..0000000
+--- a/x11-packages/librewolf/0015-protobuf-no-android-log.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0015-protobuf-no-android-log.patch b/x11-packages/librewolf/0015-protobuf-no-android-log.patch
+new file mode 120000
+index 0000000..96f1c6a
+--- /dev/null
++++ b/x11-packages/librewolf/0015-protobuf-no-android-log.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch
+deleted file mode 100644
+index afb54ec..0000000
+--- a/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch
+new file mode 120000
+index 0000000..afb54ec
+--- /dev/null
++++ b/x11-packages/librewolf/0016-fix-include-dir-for-cpufeatures.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0017-fix-sigbus.patch b/x11-packages/librewolf/0017-fix-sigbus.patch
+deleted file mode 100644
+index 244c4a2..0000000
+--- a/x11-packages/librewolf/0017-fix-sigbus.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0017-fix-sigbus.patch b/x11-packages/librewolf/0017-fix-sigbus.patch
+new file mode 120000
+index 0000000..244c4a2
+--- /dev/null
++++ b/x11-packages/librewolf/0017-fix-sigbus.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch b/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch
+deleted file mode 100644
+index c202d68..0000000
+--- a/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch b/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch
+new file mode 120000
+index 0000000..c202d68
+--- /dev/null
++++ b/x11-packages/librewolf/0018-do-not-call-get-pci-status.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch
+deleted file mode 100644
+index cf64b90..0000000
+--- a/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch
+new file mode 120000
+index 0000000..cf64b90
+--- /dev/null
++++ b/x11-packages/librewolf/0019-fix-missing-include-for-zlib-module.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch b/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch
+deleted file mode 100644
+index 3adf967..0000000
+--- a/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch b/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch
+new file mode 120000
+index 0000000..3adf967
+--- /dev/null
++++ b/x11-packages/librewolf/0020-configure-no-pack-relative-relocs.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+deleted file mode 100644
+index cb63743..0000000
+--- a/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+new file mode 120000
+index 0000000..cb63743
+--- /dev/null
++++ b/x11-packages/librewolf/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+deleted file mode 100644
+index 1cf6a4c..0000000
+--- a/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+new file mode 120000
+index 0000000..1cf6a4c
+--- /dev/null
++++ b/x11-packages/librewolf/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch b/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch
+deleted file mode 100644
+index e90cba2..0000000
+--- a/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch b/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch
+new file mode 120000
+index 0000000..e90cba2
+--- /dev/null
++++ b/x11-packages/librewolf/0023-disable-native-https-dns-resolve.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch
+deleted file mode 100644
+index 9c15a92..0000000
+--- a/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch
+new file mode 120000
+index 0000000..9c15a92
+--- /dev/null
++++ b/x11-packages/librewolf/0024-webextensions.storage.sync.kinto-true.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0025-fix-popup-white-borders.patch b/x11-packages/librewolf/0025-fix-popup-white-borders.patch
+deleted file mode 100644
+index f18b74f..0000000
+--- a/x11-packages/librewolf/0025-fix-popup-white-borders.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0025-fix-popup-white-borders.patch b/x11-packages/librewolf/0025-fix-popup-white-borders.patch
+new file mode 120000
+index 0000000..f18b74f
+--- /dev/null
++++ b/x11-packages/librewolf/0025-fix-popup-white-borders.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0026-fix-tagged-pointer.patch b/x11-packages/librewolf/0026-fix-tagged-pointer.patch
+deleted file mode 100644
+index b4f8895..0000000
+--- a/x11-packages/librewolf/0026-fix-tagged-pointer.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0026-fix-tagged-pointer.patch b/x11-packages/librewolf/0026-fix-tagged-pointer.patch
+new file mode 120000
+index 0000000..b4f8895
+--- /dev/null
++++ b/x11-packages/librewolf/0026-fix-tagged-pointer.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+deleted file mode 100644
+index 454e5df..0000000
+--- a/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+new file mode 120000
+index 0000000..454e5df
+--- /dev/null
++++ b/x11-packages/librewolf/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0029-fix-sigbus-2.patch b/x11-packages/librewolf/0029-fix-sigbus-2.patch
+deleted file mode 100644
+index 8d30ceb..0000000
+--- a/x11-packages/librewolf/0029-fix-sigbus-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0029-fix-sigbus-2.patch b/x11-packages/librewolf/0029-fix-sigbus-2.patch
+new file mode 120000
+index 0000000..8d30ceb
+--- /dev/null
++++ b/x11-packages/librewolf/0029-fix-sigbus-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0030-tagged-pointer-2.patch b/x11-packages/librewolf/0030-tagged-pointer-2.patch
+deleted file mode 100644
+index 03edc0b..0000000
+--- a/x11-packages/librewolf/0030-tagged-pointer-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/librewolf/0030-tagged-pointer-2.patch b/x11-packages/librewolf/0030-tagged-pointer-2.patch
+new file mode 120000
+index 0000000..03edc0b
+--- /dev/null
++++ b/x11-packages/librewolf/0030-tagged-pointer-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0001-fix-hardcoded-paths.patch b/x11-packages/octave-x/0001-fix-hardcoded-paths.patch
+deleted file mode 100644
+index 938eaae..0000000
+--- a/x11-packages/octave-x/0001-fix-hardcoded-paths.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/octave/0001-fix-hardcoded-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0001-fix-hardcoded-paths.patch b/x11-packages/octave-x/0001-fix-hardcoded-paths.patch
+new file mode 120000
+index 0000000..938eaae
+--- /dev/null
++++ b/x11-packages/octave-x/0001-fix-hardcoded-paths.patch
+@@ -0,0 +1 @@
++../../packages/octave/0001-fix-hardcoded-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch b/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch
+deleted file mode 100644
+index 0c68813..0000000
+--- a/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/octave/0002-append-rpath-flag-to-pkg-config-files.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch b/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch
+new file mode 120000
+index 0000000..0c68813
+--- /dev/null
++++ b/x11-packages/octave-x/0002-append-rpath-flag-to-pkg-config-files.patch
+@@ -0,0 +1 @@
++../../packages/octave/0002-append-rpath-flag-to-pkg-config-files.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch b/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch
+deleted file mode 100644
+index 3aa6560..0000000
+--- a/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/octave/0003-undefine-the-macro-in-pwd.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch b/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch
+new file mode 120000
+index 0000000..3aa6560
+--- /dev/null
++++ b/x11-packages/octave-x/0003-undefine-the-macro-in-pwd.h.patch
+@@ -0,0 +1 @@
++../../packages/octave/0003-undefine-the-macro-in-pwd.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/CVE-2022-0496.patch b/x11-packages/openscad-x/CVE-2022-0496.patch
+deleted file mode 100644
+index 74d2568..0000000
+--- a/x11-packages/openscad-x/CVE-2022-0496.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/CVE-2022-0496.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/CVE-2022-0496.patch b/x11-packages/openscad-x/CVE-2022-0496.patch
+new file mode 120000
+index 0000000..74d2568
+--- /dev/null
++++ b/x11-packages/openscad-x/CVE-2022-0496.patch
+@@ -0,0 +1 @@
++../../packages/openscad/CVE-2022-0496.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/CVE-2022-0497.patch b/x11-packages/openscad-x/CVE-2022-0497.patch
+deleted file mode 100644
+index 04d1a50..0000000
+--- a/x11-packages/openscad-x/CVE-2022-0497.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/CVE-2022-0497.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/CVE-2022-0497.patch b/x11-packages/openscad-x/CVE-2022-0497.patch
+new file mode 120000
+index 0000000..04d1a50
+--- /dev/null
++++ b/x11-packages/openscad-x/CVE-2022-0497.patch
+@@ -0,0 +1 @@
++../../packages/openscad/CVE-2022-0497.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/backport-boost8.17.patch b/x11-packages/openscad-x/backport-boost8.17.patch
+deleted file mode 100644
+index 16af76a..0000000
+--- a/x11-packages/openscad-x/backport-boost8.17.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/backport-boost8.17.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/backport-boost8.17.patch b/x11-packages/openscad-x/backport-boost8.17.patch
+new file mode 120000
+index 0000000..16af76a
+--- /dev/null
++++ b/x11-packages/openscad-x/backport-boost8.17.patch
+@@ -0,0 +1 @@
++../../packages/openscad/backport-boost8.17.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/boost-1.89.patch b/x11-packages/openscad-x/boost-1.89.patch
+deleted file mode 100644
+index c19dee6..0000000
+--- a/x11-packages/openscad-x/boost-1.89.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/boost-1.89.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/boost-1.89.patch b/x11-packages/openscad-x/boost-1.89.patch
+new file mode 120000
+index 0000000..c19dee6
+--- /dev/null
++++ b/x11-packages/openscad-x/boost-1.89.patch
+@@ -0,0 +1 @@
++../../packages/openscad/boost-1.89.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/generic_print_polyhedron.patch b/x11-packages/openscad-x/generic_print_polyhedron.patch
+deleted file mode 100644
+index ba81c69..0000000
+--- a/x11-packages/openscad-x/generic_print_polyhedron.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/generic_print_polyhedron.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/generic_print_polyhedron.patch b/x11-packages/openscad-x/generic_print_polyhedron.patch
+new file mode 120000
+index 0000000..ba81c69
+--- /dev/null
++++ b/x11-packages/openscad-x/generic_print_polyhedron.patch
+@@ -0,0 +1 @@
++../../packages/openscad/generic_print_polyhedron.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-GLView.h.patch b/x11-packages/openscad-x/src-GLView.h.patch
+deleted file mode 100644
+index 189489c..0000000
+--- a/x11-packages/openscad-x/src-GLView.h.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/src-GLView.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-GLView.h.patch b/x11-packages/openscad-x/src-GLView.h.patch
+new file mode 120000
+index 0000000..189489c
+--- /dev/null
++++ b/x11-packages/openscad-x/src-GLView.h.patch
+@@ -0,0 +1 @@
++../../packages/openscad/src-GLView.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-NULLGL.cc.patch b/x11-packages/openscad-x/src-NULLGL.cc.patch
+deleted file mode 100644
+index 7047e58..0000000
+--- a/x11-packages/openscad-x/src-NULLGL.cc.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/src-NULLGL.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-NULLGL.cc.patch b/x11-packages/openscad-x/src-NULLGL.cc.patch
+new file mode 120000
+index 0000000..7047e58
+--- /dev/null
++++ b/x11-packages/openscad-x/src-NULLGL.cc.patch
+@@ -0,0 +1 @@
++../../packages/openscad/src-NULLGL.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-cgalutils-tess.cc.patch b/x11-packages/openscad-x/src-cgalutils-tess.cc.patch
+deleted file mode 100644
+index 4a5b77e..0000000
+--- a/x11-packages/openscad-x/src-cgalutils-tess.cc.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/src-cgalutils-tess.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-cgalutils-tess.cc.patch b/x11-packages/openscad-x/src-cgalutils-tess.cc.patch
+new file mode 120000
+index 0000000..4a5b77e
+--- /dev/null
++++ b/x11-packages/openscad-x/src-cgalutils-tess.cc.patch
+@@ -0,0 +1 @@
++../../packages/openscad/src-cgalutils-tess.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-openscad.cc.patch b/x11-packages/openscad-x/src-openscad.cc.patch
+deleted file mode 100644
+index 0721fe4..0000000
+--- a/x11-packages/openscad-x/src-openscad.cc.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/openscad/src-openscad.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/openscad-x/src-openscad.cc.patch b/x11-packages/openscad-x/src-openscad.cc.patch
+new file mode 120000
+index 0000000..0721fe4
+--- /dev/null
++++ b/x11-packages/openscad-x/src-openscad.cc.patch
+@@ -0,0 +1 @@
++../../packages/openscad/src-openscad.cc.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0000-android-config-support.patch b/x11-packages/qemu-system-x86-64/0000-android-config-support.patch
+deleted file mode 100644
+index 2713751..0000000
+--- a/x11-packages/qemu-system-x86-64/0000-android-config-support.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0000-android-config-support.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0000-android-config-support.patch b/x11-packages/qemu-system-x86-64/0000-android-config-support.patch
+new file mode 120000
+index 0000000..2713751
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0000-android-config-support.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0000-android-config-support.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch b/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch
+deleted file mode 100644
+index 19a4a94..0000000
+--- a/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch b/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch
+new file mode 120000
+index 0000000..19a4a94
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch b/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch
+deleted file mode 100644
+index 4d68093..0000000
+--- a/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch b/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch
+new file mode 120000
+index 0000000..4d68093
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch b/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch
+deleted file mode 100644
+index ebdf61d..0000000
+--- a/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch b/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch
+new file mode 120000
+index 0000000..ebdf61d
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch b/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch
+deleted file mode 100644
+index f76be54..0000000
+--- a/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch b/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch
+new file mode 120000
+index 0000000..f76be54
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch b/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch
+deleted file mode 100644
+index c695337..0000000
+--- a/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch b/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch
+new file mode 120000
+index 0000000..c695337
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch b/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch
+deleted file mode 100644
+index cdf2427..0000000
+--- a/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch b/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch
+new file mode 120000
+index 0000000..cdf2427
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch b/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch
+deleted file mode 100644
+index 6107045..0000000
+--- a/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch b/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch
+new file mode 120000
+index 0000000..6107045
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch b/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch
+deleted file mode 100644
+index 09a689f..0000000
+--- a/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch b/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch
+new file mode 120000
+index 0000000..09a689f
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch b/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch
+deleted file mode 100644
+index fe9a656..0000000
+--- a/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch b/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch
+new file mode 120000
+index 0000000..fe9a656
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch b/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch
+deleted file mode 100644
+index 69c4a0b..0000000
+--- a/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch b/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch
+new file mode 120000
+index 0000000..69c4a0b
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch b/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch
+deleted file mode 100644
+index cda5ae4..0000000
+--- a/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch b/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch
+new file mode 120000
+index 0000000..cda5ae4
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch b/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch
+deleted file mode 100644
+index 14afec1..0000000
+--- a/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch b/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch
+new file mode 120000
+index 0000000..14afec1
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch b/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch
+deleted file mode 100644
+index 6420244..0000000
+--- a/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch b/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch
+new file mode 120000
+index 0000000..6420244
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch b/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch
+deleted file mode 100644
+index e7089a7..0000000
+--- a/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch b/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch
+new file mode 120000
+index 0000000..e7089a7
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch b/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch
+deleted file mode 100644
+index 93e4ff4..0000000
+--- a/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch b/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch
+new file mode 120000
+index 0000000..93e4ff4
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch b/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
+deleted file mode 100644
+index 6932a7b..0000000
+--- a/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch b/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
+new file mode 120000
+index 0000000..6932a7b
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0017-shm_open.patch b/x11-packages/qemu-system-x86-64/0017-shm_open.patch
+deleted file mode 100644
+index 1a0b02b..0000000
+--- a/x11-packages/qemu-system-x86-64/0017-shm_open.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0017-shm_open.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0017-shm_open.patch b/x11-packages/qemu-system-x86-64/0017-shm_open.patch
+new file mode 120000
+index 0000000..1a0b02b
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0017-shm_open.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0017-shm_open.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch b/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch
+deleted file mode 100644
+index cbadefd..0000000
+--- a/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch b/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch
+new file mode 120000
+index 0000000..cbadefd
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch b/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch
+deleted file mode 100644
+index 5a4e419..0000000
+--- a/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch b/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch
+new file mode 120000
+index 0000000..5a4e419
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/setjmp-aarch64 b/x11-packages/qemu-system-x86-64/setjmp-aarch64
+deleted file mode 100644
+index 3c94ec8..0000000
+--- a/x11-packages/qemu-system-x86-64/setjmp-aarch64
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/qemu-system-x86-64-headless/setjmp-aarch64/
+\ No newline at end of file
+diff --git a/x11-packages/qemu-system-x86-64/setjmp-aarch64 b/x11-packages/qemu-system-x86-64/setjmp-aarch64
+new file mode 120000
+index 0000000..3c94ec8
+--- /dev/null
++++ b/x11-packages/qemu-system-x86-64/setjmp-aarch64
+@@ -0,0 +1 @@
++../../packages/qemu-system-x86-64-headless/setjmp-aarch64/
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch b/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch
+deleted file mode 100644
+index 942501e..0000000
+--- a/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch b/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch
+new file mode 120000
+index 0000000..942501e
+--- /dev/null
++++ b/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0002-configure-fix-arm-options.patch b/x11-packages/thunderbird/0002-configure-fix-arm-options.patch
+deleted file mode 100644
+index cd39da2..0000000
+--- a/x11-packages/thunderbird/0002-configure-fix-arm-options.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0002-configure-fix-arm-options.patch b/x11-packages/thunderbird/0002-configure-fix-arm-options.patch
+new file mode 120000
+index 0000000..cd39da2
+--- /dev/null
++++ b/x11-packages/thunderbird/0002-configure-fix-arm-options.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0003-configure-fix-rustflags.patch b/x11-packages/thunderbird/0003-configure-fix-rustflags.patch
+deleted file mode 100644
+index e1a9bf3..0000000
+--- a/x11-packages/thunderbird/0003-configure-fix-rustflags.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0003-configure-fix-rustflags.patch b/x11-packages/thunderbird/0003-configure-fix-rustflags.patch
+new file mode 120000
+index 0000000..e1a9bf3
+--- /dev/null
++++ b/x11-packages/thunderbird/0003-configure-fix-rustflags.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch
+deleted file mode 100644
+index 782404d..0000000
+--- a/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch
+new file mode 120000
+index 0000000..782404d
+--- /dev/null
++++ b/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch b/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch
+deleted file mode 100644
+index 18f18ef..0000000
+--- a/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch b/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch
+new file mode 120000
+index 0000000..18f18ef
+--- /dev/null
++++ b/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch b/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch
+deleted file mode 100644
+index 5180da2..0000000
+--- a/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch b/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch
+new file mode 120000
+index 0000000..5180da2
+--- /dev/null
++++ b/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch b/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch
+deleted file mode 100644
+index c0ccc2b..0000000
+--- a/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch b/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch
+new file mode 120000
+index 0000000..c0ccc2b
+--- /dev/null
++++ b/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0008-fix-macros.patch b/x11-packages/thunderbird/0008-fix-macros.patch
+deleted file mode 100644
+index 864a131..0000000
+--- a/x11-packages/thunderbird/0008-fix-macros.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0008-fix-macros.patch b/x11-packages/thunderbird/0008-fix-macros.patch
+new file mode 120000
+index 0000000..864a131
+--- /dev/null
++++ b/x11-packages/thunderbird/0008-fix-macros.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0009-impl-posix-shmem.patch b/x11-packages/thunderbird/0009-impl-posix-shmem.patch
+deleted file mode 100644
+index cceea51..0000000
+--- a/x11-packages/thunderbird/0009-impl-posix-shmem.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0009-impl-posix-shmem.patch b/x11-packages/thunderbird/0009-impl-posix-shmem.patch
+new file mode 120000
+index 0000000..cceea51
+--- /dev/null
++++ b/x11-packages/thunderbird/0009-impl-posix-shmem.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch
+deleted file mode 100644
+index e2b253b..0000000
+--- a/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch
+new file mode 120000
+index 0000000..e2b253b
+--- /dev/null
++++ b/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch b/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch
+deleted file mode 100644
+index 414efa0..0000000
+--- a/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch b/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch
+new file mode 120000
+index 0000000..414efa0
+--- /dev/null
++++ b/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch b/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch
+deleted file mode 100644
+index b8a7728..0000000
+--- a/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch b/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch
+new file mode 120000
+index 0000000..b8a7728
+--- /dev/null
++++ b/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0013-fix-rust-compile.patch b/x11-packages/thunderbird/0013-fix-rust-compile.patch
+deleted file mode 100644
+index db4aee8..0000000
+--- a/x11-packages/thunderbird/0013-fix-rust-compile.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0013-fix-rust-compile.patch b/x11-packages/thunderbird/0013-fix-rust-compile.patch
+new file mode 120000
+index 0000000..db4aee8
+--- /dev/null
++++ b/x11-packages/thunderbird/0013-fix-rust-compile.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch
+deleted file mode 100644
+index 3ea8ddc..0000000
+--- a/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch
+new file mode 120000
+index 0000000..3ea8ddc
+--- /dev/null
++++ b/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0015-protobuf-no-android-log.patch b/x11-packages/thunderbird/0015-protobuf-no-android-log.patch
+deleted file mode 100644
+index 96f1c6a..0000000
+--- a/x11-packages/thunderbird/0015-protobuf-no-android-log.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0015-protobuf-no-android-log.patch b/x11-packages/thunderbird/0015-protobuf-no-android-log.patch
+new file mode 120000
+index 0000000..96f1c6a
+--- /dev/null
++++ b/x11-packages/thunderbird/0015-protobuf-no-android-log.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch
+deleted file mode 100644
+index afb54ec..0000000
+--- a/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch
+new file mode 120000
+index 0000000..afb54ec
+--- /dev/null
++++ b/x11-packages/thunderbird/0016-fix-include-dir-for-cpufeatures.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0017-fix-sigbus.patch b/x11-packages/thunderbird/0017-fix-sigbus.patch
+deleted file mode 100644
+index 244c4a2..0000000
+--- a/x11-packages/thunderbird/0017-fix-sigbus.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0017-fix-sigbus.patch b/x11-packages/thunderbird/0017-fix-sigbus.patch
+new file mode 120000
+index 0000000..244c4a2
+--- /dev/null
++++ b/x11-packages/thunderbird/0017-fix-sigbus.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch b/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch
+deleted file mode 100644
+index c202d68..0000000
+--- a/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch b/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch
+new file mode 120000
+index 0000000..c202d68
+--- /dev/null
++++ b/x11-packages/thunderbird/0018-do-not-call-get-pci-status.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch
+deleted file mode 100644
+index cf64b90..0000000
+--- a/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch
+new file mode 120000
+index 0000000..cf64b90
+--- /dev/null
++++ b/x11-packages/thunderbird/0019-fix-missing-include-for-zlib-module.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch b/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch
+deleted file mode 100644
+index 3adf967..0000000
+--- a/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch b/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch
+new file mode 120000
+index 0000000..3adf967
+--- /dev/null
++++ b/x11-packages/thunderbird/0020-configure-no-pack-relative-relocs.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+deleted file mode 100644
+index cb63743..0000000
+--- a/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+new file mode 120000
+index 0000000..cb63743
+--- /dev/null
++++ b/x11-packages/thunderbird/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+deleted file mode 100644
+index 1cf6a4c..0000000
+--- a/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+new file mode 120000
+index 0000000..1cf6a4c
+--- /dev/null
++++ b/x11-packages/thunderbird/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch b/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch
+deleted file mode 100644
+index e90cba2..0000000
+--- a/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch b/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch
+new file mode 120000
+index 0000000..e90cba2
+--- /dev/null
++++ b/x11-packages/thunderbird/0023-disable-native-https-dns-resolve.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch
+deleted file mode 100644
+index 9c15a92..0000000
+--- a/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch
+new file mode 120000
+index 0000000..9c15a92
+--- /dev/null
++++ b/x11-packages/thunderbird/0024-webextensions.storage.sync.kinto-true.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0025-fix-popup-white-borders.patch b/x11-packages/thunderbird/0025-fix-popup-white-borders.patch
+deleted file mode 100644
+index f18b74f..0000000
+--- a/x11-packages/thunderbird/0025-fix-popup-white-borders.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0025-fix-popup-white-borders.patch b/x11-packages/thunderbird/0025-fix-popup-white-borders.patch
+new file mode 120000
+index 0000000..f18b74f
+--- /dev/null
++++ b/x11-packages/thunderbird/0025-fix-popup-white-borders.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0026-fix-tagged-pointer.patch b/x11-packages/thunderbird/0026-fix-tagged-pointer.patch
+deleted file mode 100644
+index b4f8895..0000000
+--- a/x11-packages/thunderbird/0026-fix-tagged-pointer.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0026-fix-tagged-pointer.patch b/x11-packages/thunderbird/0026-fix-tagged-pointer.patch
+new file mode 120000
+index 0000000..b4f8895
+--- /dev/null
++++ b/x11-packages/thunderbird/0026-fix-tagged-pointer.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch b/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+deleted file mode 100644
+index e4fadb2..0000000
+--- a/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch b/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+new file mode 120000
+index 0000000..e4fadb2
+--- /dev/null
++++ b/x11-packages/thunderbird/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+deleted file mode 100644
+index 454e5df..0000000
+--- a/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+new file mode 120000
+index 0000000..454e5df
+--- /dev/null
++++ b/x11-packages/thunderbird/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0029-fix-sigbus-2.patch b/x11-packages/thunderbird/0029-fix-sigbus-2.patch
+deleted file mode 100644
+index 8d30ceb..0000000
+--- a/x11-packages/thunderbird/0029-fix-sigbus-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0029-fix-sigbus-2.patch b/x11-packages/thunderbird/0029-fix-sigbus-2.patch
+new file mode 120000
+index 0000000..8d30ceb
+--- /dev/null
++++ b/x11-packages/thunderbird/0029-fix-sigbus-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0030-tagged-pointer-2.patch b/x11-packages/thunderbird/0030-tagged-pointer-2.patch
+deleted file mode 100644
+index 03edc0b..0000000
+--- a/x11-packages/thunderbird/0030-tagged-pointer-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0030-tagged-pointer-2.patch b/x11-packages/thunderbird/0030-tagged-pointer-2.patch
+new file mode 120000
+index 0000000..03edc0b
+--- /dev/null
++++ b/x11-packages/thunderbird/0030-tagged-pointer-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch b/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch
+deleted file mode 100644
+index 88ea68e..0000000
+--- a/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0031-fix-build-with-webspeech-disabled.patch
+\ No newline at end of file
+diff --git a/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch b/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch
+new file mode 120000
+index 0000000..88ea68e
+--- /dev/null
++++ b/x11-packages/thunderbird/0031-fix-build-with-webspeech-disabled.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0031-fix-build-with-webspeech-disabled.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff b/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff
+deleted file mode 100644
+index 12be466..0000000
+--- a/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/configure-perl-ruby-tcl-cross-compiling.diff
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff b/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff
+new file mode 120000
+index 0000000..12be466
+--- /dev/null
++++ b/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff
+@@ -0,0 +1 @@
++../../packages/vim/configure-perl-ruby-tcl-cross-compiling.diff
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/fix-writing-archive.patch b/x11-packages/vim-gtk/fix-writing-archive.patch
+deleted file mode 100644
+index 53a5a32..0000000
+--- a/x11-packages/vim-gtk/fix-writing-archive.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/fix-writing-archive.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/fix-writing-archive.patch b/x11-packages/vim-gtk/fix-writing-archive.patch
+new file mode 120000
+index 0000000..53a5a32
+--- /dev/null
++++ b/x11-packages/vim-gtk/fix-writing-archive.patch
+@@ -0,0 +1 @@
++../../packages/vim/fix-writing-archive.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/option.c.patch b/x11-packages/vim-gtk/option.c.patch
+deleted file mode 100644
+index 7c62948..0000000
+--- a/x11-packages/vim-gtk/option.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/option.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/option.c.patch b/x11-packages/vim-gtk/option.c.patch
+new file mode 120000
+index 0000000..7c62948
+--- /dev/null
++++ b/x11-packages/vim-gtk/option.c.patch
+@@ -0,0 +1 @@
++../../packages/vim/option.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/revert-1fe0d1e.patch b/x11-packages/vim-gtk/revert-1fe0d1e.patch
+deleted file mode 100644
+index 6636acd..0000000
+--- a/x11-packages/vim-gtk/revert-1fe0d1e.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/revert-1fe0d1e.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/revert-1fe0d1e.patch b/x11-packages/vim-gtk/revert-1fe0d1e.patch
+new file mode 120000
+index 0000000..6636acd
+--- /dev/null
++++ b/x11-packages/vim-gtk/revert-1fe0d1e.patch
+@@ -0,0 +1 @@
++../../packages/vim/revert-1fe0d1e.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch b/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch
+deleted file mode 100644
+index 5e2fa8b..0000000
+--- a/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/runtime-syntax-sh.vim.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch b/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch
+new file mode 120000
+index 0000000..5e2fa8b
+--- /dev/null
++++ b/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch
+@@ -0,0 +1 @@
++../../packages/vim/runtime-syntax-sh.vim.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/src-os_unix.h.patch b/x11-packages/vim-gtk/src-os_unix.h.patch
+deleted file mode 100644
+index da0054b..0000000
+--- a/x11-packages/vim-gtk/src-os_unix.h.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/src-os_unix.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/src-os_unix.h.patch b/x11-packages/vim-gtk/src-os_unix.h.patch
+new file mode 120000
+index 0000000..da0054b
+--- /dev/null
++++ b/x11-packages/vim-gtk/src-os_unix.h.patch
+@@ -0,0 +1 @@
++../../packages/vim/src-os_unix.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vim.alternatives b/x11-packages/vim-gtk/vim.alternatives
+deleted file mode 100644
+index 3e8721d..0000000
+--- a/x11-packages/vim-gtk/vim.alternatives
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/vim.alternatives
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vim.alternatives b/x11-packages/vim-gtk/vim.alternatives
+new file mode 120000
+index 0000000..3e8721d
+--- /dev/null
++++ b/x11-packages/vim-gtk/vim.alternatives
+@@ -0,0 +1 @@
++../../packages/vim/vim.alternatives
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vimrc b/x11-packages/vim-gtk/vimrc
+deleted file mode 100644
+index ba35ebb..0000000
+--- a/x11-packages/vim-gtk/vimrc
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/vimrc
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vimrc b/x11-packages/vim-gtk/vimrc
+new file mode 120000
+index 0000000..ba35ebb
+--- /dev/null
++++ b/x11-packages/vim-gtk/vimrc
+@@ -0,0 +1 @@
++../../packages/vim/vimrc
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vimtutor.patch b/x11-packages/vim-gtk/vimtutor.patch
+deleted file mode 100644
+index bbb7e50..0000000
+--- a/x11-packages/vim-gtk/vimtutor.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vim/vimtutor.patch
+\ No newline at end of file
+diff --git a/x11-packages/vim-gtk/vimtutor.patch b/x11-packages/vim-gtk/vimtutor.patch
+new file mode 120000
+index 0000000..bbb7e50
+--- /dev/null
++++ b/x11-packages/vim-gtk/vimtutor.patch
+@@ -0,0 +1 @@
++../../packages/vim/vimtutor.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/configure.ac.patch b/x11-packages/vlc-qt/configure.ac.patch
+deleted file mode 100644
+index f7bdb78..0000000
+--- a/x11-packages/vlc-qt/configure.ac.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/configure.ac.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/configure.ac.patch b/x11-packages/vlc-qt/configure.ac.patch
+new file mode 120000
+index 0000000..f7bdb78
+--- /dev/null
++++ b/x11-packages/vlc-qt/configure.ac.patch
+@@ -0,0 +1 @@
++../../packages/vlc/configure.ac.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/disable-fdsan.patch b/x11-packages/vlc-qt/disable-fdsan.patch
+deleted file mode 100644
+index 04d3a58..0000000
+--- a/x11-packages/vlc-qt/disable-fdsan.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/disable-fdsan.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/disable-fdsan.patch b/x11-packages/vlc-qt/disable-fdsan.patch
+new file mode 120000
+index 0000000..04d3a58
+--- /dev/null
++++ b/x11-packages/vlc-qt/disable-fdsan.patch
+@@ -0,0 +1 @@
++../../packages/vlc/disable-fdsan.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch b/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch
+deleted file mode 100644
+index cccfcdd..0000000
+--- a/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-audio_output-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch b/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch
+new file mode 120000
+index 0000000..cccfcdd
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-audio_output-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-codec-Makefile.am.patch b/x11-packages/vlc-qt/modules-codec-Makefile.am.patch
+deleted file mode 100644
+index 8701fd8..0000000
+--- a/x11-packages/vlc-qt/modules-codec-Makefile.am.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-codec-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-codec-Makefile.am.patch b/x11-packages/vlc-qt/modules-codec-Makefile.am.patch
+new file mode 120000
+index 0000000..8701fd8
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-codec-Makefile.am.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-codec-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch b/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch
+deleted file mode 100644
+index a65f57d..0000000
+--- a/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-keystore-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch b/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch
+new file mode 120000
+index 0000000..a65f57d
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-keystore-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch b/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch
+deleted file mode 100644
+index c8d18be..0000000
+--- a/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-keystore-file_crypt.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch b/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch
+new file mode 120000
+index 0000000..c8d18be
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-keystore-file_crypt.h.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch b/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch
+deleted file mode 100644
+index a0c68d8..0000000
+--- a/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-video_output-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch b/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch
+new file mode 120000
+index 0000000..a0c68d8
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-video_output-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch b/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch
+deleted file mode 100644
+index cb44aea..0000000
+--- a/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/modules-video_output-xcb-x11.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch b/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch
+new file mode 120000
+index 0000000..cb44aea
+--- /dev/null
++++ b/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch
+@@ -0,0 +1 @@
++../../packages/vlc/modules-video_output-xcb-x11.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-Makefile.am.patch b/x11-packages/vlc-qt/src-Makefile.am.patch
+deleted file mode 100644
+index eb39276..0000000
+--- a/x11-packages/vlc-qt/src-Makefile.am.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/src-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-Makefile.am.patch b/x11-packages/vlc-qt/src-Makefile.am.patch
+new file mode 120000
+index 0000000..eb39276
+--- /dev/null
++++ b/x11-packages/vlc-qt/src-Makefile.am.patch
+@@ -0,0 +1 @@
++../../packages/vlc/src-Makefile.am.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch b/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch
+deleted file mode 100644
+index 28be0f0..0000000
+--- a/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/src-network-getaddrinfo.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch b/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch
+new file mode 120000
+index 0000000..28be0f0
+--- /dev/null
++++ b/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch
+@@ -0,0 +1 @@
++../../packages/vlc/src-network-getaddrinfo.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-posix-filesystem.c.patch b/x11-packages/vlc-qt/src-posix-filesystem.c.patch
+deleted file mode 100644
+index 3d97303..0000000
+--- a/x11-packages/vlc-qt/src-posix-filesystem.c.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/src-posix-filesystem.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/src-posix-filesystem.c.patch b/x11-packages/vlc-qt/src-posix-filesystem.c.patch
+new file mode 120000
+index 0000000..3d97303
+--- /dev/null
++++ b/x11-packages/vlc-qt/src-posix-filesystem.c.patch
+@@ -0,0 +1 @@
++../../packages/vlc/src-posix-filesystem.c.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/xcb-priority.patch b/x11-packages/vlc-qt/xcb-priority.patch
+deleted file mode 100644
+index be84940..0000000
+--- a/x11-packages/vlc-qt/xcb-priority.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../packages/vlc/xcb-priority.patch
+\ No newline at end of file
+diff --git a/x11-packages/vlc-qt/xcb-priority.patch b/x11-packages/vlc-qt/xcb-priority.patch
+new file mode 120000
+index 0000000..be84940
+--- /dev/null
++++ b/x11-packages/vlc-qt/xcb-priority.patch
+@@ -0,0 +1 @@
++../../packages/vlc/xcb-priority.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch b/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch
+deleted file mode 100644
+index 942501e..0000000
+--- a/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch b/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch
+new file mode 120000
+index 0000000..942501e
+--- /dev/null
++++ b/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0001-configure-treat-termux-as-linux.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0002-configure-fix-arm-options.patch b/x11-packages/zen-browser/0002-configure-fix-arm-options.patch
+deleted file mode 100644
+index cd39da2..0000000
+--- a/x11-packages/zen-browser/0002-configure-fix-arm-options.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0002-configure-fix-arm-options.patch b/x11-packages/zen-browser/0002-configure-fix-arm-options.patch
+new file mode 120000
+index 0000000..cd39da2
+--- /dev/null
++++ b/x11-packages/zen-browser/0002-configure-fix-arm-options.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0002-configure-fix-arm-options.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0003-configure-fix-rustflags.patch b/x11-packages/zen-browser/0003-configure-fix-rustflags.patch
+deleted file mode 100644
+index e1a9bf3..0000000
+--- a/x11-packages/zen-browser/0003-configure-fix-rustflags.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0003-configure-fix-rustflags.patch b/x11-packages/zen-browser/0003-configure-fix-rustflags.patch
+new file mode 120000
+index 0000000..e1a9bf3
+--- /dev/null
++++ b/x11-packages/zen-browser/0003-configure-fix-rustflags.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0003-configure-fix-rustflags.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch
+deleted file mode 100644
+index 782404d..0000000
+--- a/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch b/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch
+new file mode 120000
+index 0000000..782404d
+--- /dev/null
++++ b/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0004-configure-do-not-check-libstdcxx-headers.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch b/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch
+deleted file mode 100644
+index 18f18ef..0000000
+--- a/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch b/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch
+new file mode 120000
+index 0000000..18f18ef
+--- /dev/null
++++ b/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0005-configure-do-not-append-sysroot.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch b/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch
+deleted file mode 100644
+index 5180da2..0000000
+--- a/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch b/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch
+new file mode 120000
+index 0000000..5180da2
+--- /dev/null
++++ b/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0006-configure-do-not-enable-alsa.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch b/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch
+deleted file mode 100644
+index c0ccc2b..0000000
+--- a/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch b/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch
+new file mode 120000
+index 0000000..c0ccc2b
+--- /dev/null
++++ b/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0007-fix-link-with-libcxx-18.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0008-fix-macros.patch b/x11-packages/zen-browser/0008-fix-macros.patch
+deleted file mode 100644
+index 864a131..0000000
+--- a/x11-packages/zen-browser/0008-fix-macros.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0008-fix-macros.patch b/x11-packages/zen-browser/0008-fix-macros.patch
+new file mode 120000
+index 0000000..864a131
+--- /dev/null
++++ b/x11-packages/zen-browser/0008-fix-macros.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0008-fix-macros.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0009-impl-posix-shmem.patch b/x11-packages/zen-browser/0009-impl-posix-shmem.patch
+deleted file mode 100644
+index cceea51..0000000
+--- a/x11-packages/zen-browser/0009-impl-posix-shmem.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0009-impl-posix-shmem.patch b/x11-packages/zen-browser/0009-impl-posix-shmem.patch
+new file mode 120000
+index 0000000..cceea51
+--- /dev/null
++++ b/x11-packages/zen-browser/0009-impl-posix-shmem.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0009-impl-posix-shmem.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch
+deleted file mode 100644
+index e2b253b..0000000
+--- a/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch b/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch
+new file mode 120000
+index 0000000..e2b253b
+--- /dev/null
++++ b/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0010-do-not-check-time_t-for-system-libevent.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch b/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch
+deleted file mode 100644
+index 414efa0..0000000
+--- a/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch b/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch
+new file mode 120000
+index 0000000..414efa0
+--- /dev/null
++++ b/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0011-use-UnderrunHandlerNoop.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch b/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch
+deleted file mode 100644
+index b8a7728..0000000
+--- a/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch b/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch
+new file mode 120000
+index 0000000..b8a7728
+--- /dev/null
++++ b/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0012-do-not-use-adaptive-mutex.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0013-fix-rust-compile.patch b/x11-packages/zen-browser/0013-fix-rust-compile.patch
+deleted file mode 100644
+index db4aee8..0000000
+--- a/x11-packages/zen-browser/0013-fix-rust-compile.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0013-fix-rust-compile.patch b/x11-packages/zen-browser/0013-fix-rust-compile.patch
+new file mode 120000
+index 0000000..db4aee8
+--- /dev/null
++++ b/x11-packages/zen-browser/0013-fix-rust-compile.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0013-fix-rust-compile.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch
+deleted file mode 100644
+index 3ea8ddc..0000000
+--- a/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch b/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch
+new file mode 120000
+index 0000000..3ea8ddc
+--- /dev/null
++++ b/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0014-unset-thread-priority-scheduling-macro.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0015-protobuf-no-android-log.patch b/x11-packages/zen-browser/0015-protobuf-no-android-log.patch
+deleted file mode 100644
+index 96f1c6a..0000000
+--- a/x11-packages/zen-browser/0015-protobuf-no-android-log.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0015-protobuf-no-android-log.patch b/x11-packages/zen-browser/0015-protobuf-no-android-log.patch
+new file mode 120000
+index 0000000..96f1c6a
+--- /dev/null
++++ b/x11-packages/zen-browser/0015-protobuf-no-android-log.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0015-protobuf-no-android-log.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch
+deleted file mode 100644
+index afb54ec..0000000
+--- a/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch b/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch
+new file mode 120000
+index 0000000..afb54ec
+--- /dev/null
++++ b/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0016-fix-include-dir-for-cpufeatures.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0017-fix-sigbus.patch b/x11-packages/zen-browser/0017-fix-sigbus.patch
+deleted file mode 100644
+index 244c4a2..0000000
+--- a/x11-packages/zen-browser/0017-fix-sigbus.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0017-fix-sigbus.patch b/x11-packages/zen-browser/0017-fix-sigbus.patch
+new file mode 120000
+index 0000000..244c4a2
+--- /dev/null
++++ b/x11-packages/zen-browser/0017-fix-sigbus.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0017-fix-sigbus.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch b/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch
+deleted file mode 100644
+index c202d68..0000000
+--- a/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch b/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch
+new file mode 120000
+index 0000000..c202d68
+--- /dev/null
++++ b/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0018-do-not-call-get-pci-status.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch
+deleted file mode 100644
+index cf64b90..0000000
+--- a/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch b/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch
+new file mode 120000
+index 0000000..cf64b90
+--- /dev/null
++++ b/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0019-fix-missing-include-for-zlib-module.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch b/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch
+deleted file mode 100644
+index 3adf967..0000000
+--- a/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch b/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch
+new file mode 120000
+index 0000000..3adf967
+--- /dev/null
++++ b/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0020-configure-no-pack-relative-relocs.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+deleted file mode 100644
+index cb63743..0000000
+--- a/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch b/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+new file mode 120000
+index 0000000..cb63743
+--- /dev/null
++++ b/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0021-check-if-dlpi_name-is-nullptr-before-using.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+deleted file mode 100644
+index 1cf6a4c..0000000
+--- a/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch b/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+new file mode 120000
+index 0000000..1cf6a4c
+--- /dev/null
++++ b/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch b/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch
+deleted file mode 100644
+index e90cba2..0000000
+--- a/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch b/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch
+new file mode 120000
+index 0000000..e90cba2
+--- /dev/null
++++ b/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0023-disable-native-https-dns-resolve.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch
+deleted file mode 100644
+index 9c15a92..0000000
+--- a/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch b/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch
+new file mode 120000
+index 0000000..9c15a92
+--- /dev/null
++++ b/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0024-webextensions.storage.sync.kinto-true.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0025-fix-popup-white-borders.patch b/x11-packages/zen-browser/0025-fix-popup-white-borders.patch
+deleted file mode 100644
+index f18b74f..0000000
+--- a/x11-packages/zen-browser/0025-fix-popup-white-borders.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0025-fix-popup-white-borders.patch b/x11-packages/zen-browser/0025-fix-popup-white-borders.patch
+new file mode 120000
+index 0000000..f18b74f
+--- /dev/null
++++ b/x11-packages/zen-browser/0025-fix-popup-white-borders.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0025-fix-popup-white-borders.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0026-fix-tagged-pointer.patch b/x11-packages/zen-browser/0026-fix-tagged-pointer.patch
+deleted file mode 100644
+index b4f8895..0000000
+--- a/x11-packages/zen-browser/0026-fix-tagged-pointer.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0026-fix-tagged-pointer.patch b/x11-packages/zen-browser/0026-fix-tagged-pointer.patch
+new file mode 120000
+index 0000000..b4f8895
+--- /dev/null
++++ b/x11-packages/zen-browser/0026-fix-tagged-pointer.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0026-fix-tagged-pointer.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch b/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+deleted file mode 100644
+index e4fadb2..0000000
+--- a/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch b/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+new file mode 120000
+index 0000000..e4fadb2
+--- /dev/null
++++ b/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+deleted file mode 100644
+index 454e5df..0000000
+--- a/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch b/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+new file mode 120000
+index 0000000..454e5df
+--- /dev/null
++++ b/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0029-fix-sigbus-2.patch b/x11-packages/zen-browser/0029-fix-sigbus-2.patch
+deleted file mode 100644
+index 8d30ceb..0000000
+--- a/x11-packages/zen-browser/0029-fix-sigbus-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0029-fix-sigbus-2.patch b/x11-packages/zen-browser/0029-fix-sigbus-2.patch
+new file mode 120000
+index 0000000..8d30ceb
+--- /dev/null
++++ b/x11-packages/zen-browser/0029-fix-sigbus-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0029-fix-sigbus-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0030-tagged-pointer-2.patch b/x11-packages/zen-browser/0030-tagged-pointer-2.patch
+deleted file mode 100644
+index 03edc0b..0000000
+--- a/x11-packages/zen-browser/0030-tagged-pointer-2.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0030-tagged-pointer-2.patch b/x11-packages/zen-browser/0030-tagged-pointer-2.patch
+new file mode 120000
+index 0000000..03edc0b
+--- /dev/null
++++ b/x11-packages/zen-browser/0030-tagged-pointer-2.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0030-tagged-pointer-2.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch b/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch
+deleted file mode 100644
+index 88ea68e..0000000
+--- a/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch
++++ /dev/null
+@@ -1 +0,0 @@
+-../../x11-packages/firefox/0031-fix-build-with-webspeech-disabled.patch
+\ No newline at end of file
+diff --git a/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch b/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch
+new file mode 120000
+index 0000000..88ea68e
+--- /dev/null
++++ b/x11-packages/zen-browser/0031-fix-build-with-webspeech-disabled.patch
+@@ -0,0 +1 @@
++../../x11-packages/firefox/0031-fix-build-with-webspeech-disabled.patch
+\ No newline at end of file
