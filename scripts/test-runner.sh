@@ -1,4 +1,4 @@
-#!/data/data/com.codeforge/files/usr/bin/bash
+#!/data/data/com.codeforge.app/files/usr/bin/bash
 
 if [ $# != 1 ]; then
 	echo "Specify package to run tests for as only argument"

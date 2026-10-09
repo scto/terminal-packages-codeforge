@@ -90,7 +90,7 @@ for repo in $(jq --raw-output 'del(.pkg_format) | keys | .[]' repo.json); do
 		if [[ ! -f "Packages-${repo}-${arch}" ]]; then
 			echo "[*] Downloading ${url}/dists/${distribution}/${component}/binary-${arch}/Packages.bz2"
 			curl -s \
-				--user-agent 'Termux-Packages/1.0\ (https://github.com.codeforge/termux-packages)' \
+				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
 				"${url}/dists/${distribution}/${component}/binary-${arch}/Packages.bz2" \
 				-o "Packages-${repo}-${arch}.bz2"
 			7z x "Packages-${repo}-${arch}.bz2" > /dev/null
@@ -98,7 +98,7 @@ for repo in $(jq --raw-output 'del(.pkg_format) | keys | .[]' repo.json); do
 		if [[ ! -f "Contents-${repo}-${arch}" ]]; then
 			echo "[*] Downloading ${url}/dists/${distribution}/Contents-${arch}.gz"
 			curl -s \
-				--user-agent 'Termux-Packages/1.0\ (https://github.com.codeforge/termux-packages)' \
+				--user-agent 'Termux-Packages/1.0\ (https://github.com/termux/termux-packages)' \
 				"${url}/dists/${distribution}/Contents-${arch}.gz" \
 				-o "Contents-${repo}-${arch}.gz"
 			gunzip -k "Contents-${repo}-${arch}.gz"

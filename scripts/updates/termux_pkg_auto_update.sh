@@ -20,7 +20,7 @@ termux_pkg_get_update_method() {
 	# GitHub Actions with HTTP 403 errors in January 2026.
 	# Example command failing in GitHub Actions:
 	# curl https://gitlab.gnome.org/api/v4/projects/GNOME%2Fvte/releases/permalink/latest
-	# See: https://github.com.codeforge/termux-packages/issues/28242
+	# See: https://github.com/termux/termux-packages/issues/28242
 	if [[ -z "${TERMUX_PKG_UPDATE_METHOD:-}" ]]; then
 		if [[ "${project_host}" == "github.com" ]]; then
 			TERMUX_PKG_UPDATE_METHOD="github"

@@ -30,7 +30,7 @@ termux_setup_ghc() {
 		[[ "$TERMUX_ARCH" == "arm" ]] && target="armv7a-linux-androideabi"
 
 		local release_tag="$TERMUX_GHC_VERSION"+patch1
-		termux_download "https://github.com.codeforge/ghc-cross-tools/releases/download/ghc-v$release_tag/ghc-$TERMUX_GHC_VERSION-$target.tar.xz" \
+		termux_download "https://github.com/termux/ghc-cross-tools/releases/download/ghc-v$release_tag/ghc-$TERMUX_GHC_VERSION-$target.tar.xz" \
 			"$TERMUX_GHC_TAR" \
 			"${checksums[$TERMUX_ARCH]}"
 
