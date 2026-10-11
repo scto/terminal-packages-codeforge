@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: aarch64 arm
+Codename: stable
+Components: main
+Date: Sun, 11 Oct 2026 20:00:24 +0000
+Description: CodeForge package repository (prefix com.codeforge.app)
+Label: CodeForge Mobile Repository
+Origin: CodeForge
+Suite: stable
+MD5Sum:
+ 270863bff3f7440a23b14339eb4facec           138174 main/binary-aarch64/Packages
+ 64d0bf8183491615a6505f2e8d860cc0            52881 main/binary-aarch64/Packages.gz
+ 5ae8894f6775418601832ecc48af8307           136543 main/binary-arm/Packages
+ 8a5e40ae018b6cc7b0a1501b3a04606d            52861 main/binary-arm/Packages.gz
+SHA1:
+ 52c0ac69ac3c981373df7d748ffc51e0a3a63d08           138174 main/binary-aarch64/Packages
+ 803db9ac0e6f28e7fc1d684ced4a021474da9245            52881 main/binary-aarch64/Packages.gz
+ 5852b7db433de22c1f200694b24f152f6988ee58           136543 main/binary-arm/Packages
+ 778b2daef57a193e08fb09c346be9e333aa710cb            52861 main/binary-arm/Packages.gz
+SHA256:
+ 882762d35fb69115eb68e5dd1524833e008340dd98ed2ef562b2cbec1b585a93           138174 main/binary-aarch64/Packages
+ 59c0d9888995e3ddbdaacd1b6a12f3d2ea0ddfb3248c231c7caed4866a3d747d            52881 main/binary-aarch64/Packages.gz
+ 4a7e56e3edf0b1528d4a9266c9a13fbc11ef59933aca355ce4fe1e3f61a2fa8d           136543 main/binary-arm/Packages
+ 589fcfd11f51f47808352935e2a64663d1c93c45a08f26f97ca757321694ad94            52861 main/binary-arm/Packages.gz
+SHA512:
+ e925839541a2d3921ed731b436fe2d7082e92fa79db6fb470f8943fca15939e188b4ab58ba50cd5e48d0fb857e44695ed66cded5e96e2f5f73c10e6be461d86d           138174 main/binary-aarch64/Packages
+ 8f56b6c2d699d52f74b1fb288644b9a36321c2e7f0fbad3da6ab8133eeece9bfbb6260d1868d8d2677b9543d4dc6d4a49a682a72f50adebe238bca1a73d59669            52881 main/binary-aarch64/Packages.gz
+ 048b15ea7e4ca7589484a2ecb23bfefb0813db70e1e38535bb6b4c770af831b8f13da741bfc904ca3c8cc103bfad4e550198ad9b3d69939faf8b6cb1bc22b3c3           136543 main/binary-arm/Packages
+ 140b03ed37d5b98e29eaa96049aeffb45e3309b4b31ca320b2ae988cdfb5f1f6ad6fb679f621921f6cd4631da00a866889e1b9461e30760b1cd60a6c22dc5dec            52861 main/binary-arm/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEQTomrPwv6jOooao67eu/i9iy3n0FAmrL6tkACgkQ7eu/i9iy
+3n1fmhAAkuACTvxnERdOGFGx8lUdwwwKk7JoLYBiDbLCRGdesgbDvMKqWyNB1th2
+5+hdqDx51FYR+cU/nvGRALvbhJSwXKXMEBGueqsUivGQvhmemmZ4VFJ7jKIJgP/B
+cCV0G2ztDVZ13KSHuI/0iKB+iGx5k9a9aPYq41eULwpNfds9bKc5Gk4sfKv+vxTT
+QeHHl0r0GzhzDBdg45vXSx9zKOR9/UygvfY1rapwkLhdzEWpZraU4mxeJARg3lLd
+LXRmy6/i5EV+rWwZ3pQCA0JtpVAF4DOxChVLfnrQKbSoM79T+mo57wir7kOsrUxu
+N7ikRhPdvS/gCnZfkwBJp4Eqp7MhcVBUr9Q/w2sU4Vd2o83t3/b43ATocA85o3Xb
+uskTUlgvoRFYAfkRcVr6sHlpmqkgvgpsmO9y0OnCPNTCGGBJ8cavNPsYrW16evWG
+HFilLJBiw6siTgR0hQMS0XnkMNMRRYrYrkoqrUzUIQUCZUJXnF8lozzKhI4DKzV9
+UZrYkrlPulhNBtljKprf6gbI6OzHH6aQ5uuzTwGh0+h1aLoXo0ehD6KiS6f2cgFX
+S/P9OV/LH72d0tNGoH/3B6qtyFV8Uk6xRk35myInjZRUV8PoTxLdoFbioDb+zlti
+8et3SCIQFvQM+OGZ6kst9lxPabi8khbI3N+HhblZ4XfQ2prjORo=
+=Sp43
+-----END PGP SIGNATURE-----
