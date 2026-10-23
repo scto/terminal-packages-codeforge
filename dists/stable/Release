@@ -1,0 +1,28 @@
+Architectures: aarch64 arm
+Codename: stable
+Components: main
+Date: Fri, 23 Oct 2026 19:47:30 +0000
+Description: CodeForge package repository (prefix com.codeforge.app)
+Label: CodeForge Mobile Repository
+Origin: CodeForge
+Suite: stable
+MD5Sum:
+ fa35bbf8fca99aa5dc0cb0936c0095ad           260074 main/binary-aarch64/Packages
+ c013766aac44e134f05521a67d9fed0e            99684 main/binary-aarch64/Packages.gz
+ d559d6fbb3f423ed6bd55b99e4f30a3b           256913 main/binary-arm/Packages
+ 3fa0b6b10ee64219c9c0eb02e76a9746            99614 main/binary-arm/Packages.gz
+SHA1:
+ 97feaaef96c9e09509fca30e677296ade6a113e8           260074 main/binary-aarch64/Packages
+ 93c32f9b6f41b58a583d9c44b18a833363dd6285            99684 main/binary-aarch64/Packages.gz
+ 52ebac481a10070c796eb287fcfd3b65deadbf8e           256913 main/binary-arm/Packages
+ 2bb2e7777289690882acde073611cc489e01549a            99614 main/binary-arm/Packages.gz
+SHA256:
+ 71d66a4557477c62fe88ee7b2691b78b18453fa20fe7e06a61ea0c8f39c7913a           260074 main/binary-aarch64/Packages
+ cb1cd7a287423271d7c182931db790f093951e1afcd2d333f7f7f74d2f7d97aa            99684 main/binary-aarch64/Packages.gz
+ da797683eb0ca1d854ed544c0b5f2dbde8c2adfa637bf21fe0cc086cc0478ffe           256913 main/binary-arm/Packages
+ bedf850e0883a12711fd6ec0e2e4dea90147b2c688b4b98ed8aa43868b10e9f6            99614 main/binary-arm/Packages.gz
+SHA512:
+ eb968daa9e37648d790d157f3d66ffea07e8aa4c5f2009234d06368478c7374df2c02244a3424f995ffad84a8bc9af9b681f2d5f43e618e721b2144225e18c8d           260074 main/binary-aarch64/Packages
+ 47dac1a5f62bf1dfe60bcfe4977d45fedcc5edd7c13a34da61fe19a305b38cf19d2eed03dc07811479aad41f7a6f610dc3b8a5725b96ced68b9a841ef9629de6            99684 main/binary-aarch64/Packages.gz
+ b94cd088d531c6916fb80d47b32abcf247492f299d5fd7a57a85bf7a8eb11555582f2441d9d9b5cbfa532dc8ddd6bf9bb271e7ca2260b450d3ad1c9b5746cc98           256913 main/binary-arm/Packages
+ c96db5b5056c7967ee71d6e0801cb4f5d2af6386424c919a65912871885c935321ef06b8e10003df954cd68ee1381fd9dce0688a01d4b933c8610b3692893177            99614 main/binary-arm/Packages.gz
