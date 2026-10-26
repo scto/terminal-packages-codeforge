@@ -314,11 +314,58 @@ create_bootstrap_archive() {
 			rm -f "$link"
 		done < <(find . -type l -print0)
 
+		optimize_bootstrap_rootfs
+
 		zip -r9 "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" ./*
 	)
 
 	mv -f "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" ./
 	echo "[*] Finished successfully (${1})."
+}
+
+# Repack a ZIP/JAR without compression (faster to read, compresses better
+# inside the outer archive). Idempotent; failures only skip the file.
+repack_zip() {
+	local input="$1" temp
+	temp=$(mktemp -d) || return 0
+	(cd "$temp" && unzip -qq "$input" && rm -f "$input" && zip -qr0 "$input" ./*) \
+		|| echo "[!] Repack failed: $input"
+	rm -rf "$temp"
+}
+
+# Size/speed optimizations for the bootstrap rootfs (cwd = prefix).
+# Every step is optional and skipped when its tool or target is missing.
+optimize_bootstrap_rootfs() {
+	local zip_file jdk_dir ctsym temp strip_bin
+
+	echo "[*] Repacking nested ZIP files"
+	while read -r -d '' zip_file; do
+		repack_zip "$(realpath "$zip_file")"
+	done < <(find . -type f -name '*.zip' -print0)
+
+	for jdk_dir in ./lib/jvm/java-*-openjdk; do
+		[[ -d "$jdk_dir" ]] || continue
+		ctsym="$jdk_dir/lib/ct.sym"
+		if [[ -f "$ctsym" ]] && command -v brotli >/dev/null 2>&1; then
+			echo "[*] Repacking ${ctsym}"
+			ctsym="$(realpath "$ctsym")"
+			temp=$(mktemp -d)
+			(cd "$temp" && unzip -qq "$ctsym" && rm -f "$ctsym" \
+				&& zip -qr0 ct.sym ./* && brotli -Zo "$ctsym" ct.sym) \
+				|| echo "[!] ct.sym repack failed"
+			rm -rf "$temp"
+		fi
+		rm -rf "$jdk_dir/demo"
+	done
+
+	strip_bin="${NDK:+$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip}"
+	if [[ -n "$strip_bin" && -x "$strip_bin" ]]; then
+		echo "[*] Stripping ELF binaries"
+		find . -type f -print0 | while read -r -d '' f; do
+			[[ "$(head -c4 "$f" 2>/dev/null | od -An -tx1 | tr -d ' \n')" == "7f454c46" ]] \
+				&& "$strip_bin" "$f" 2>/dev/null
+		done || true
+	fi
 }
 
 show_usage() {
