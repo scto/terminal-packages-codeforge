@@ -4,7 +4,7 @@ TERMUX_PKG_LICENSE="GPL-3.0"
 TERMUX_PKG_MAINTAINER="@scto"
 # Version erhöhen, sobald sich codeforge-env.in ändert (Quelle: libs/terminal-engine/src/main/assets/codeforge-env
 # im Repo CodeForgeMobile, Abgleich mit scripts/sync-codeforge-env-package.sh).
-TERMUX_PKG_VERSION=1.0.3
+TERMUX_PKG_VERSION=1.0.4
 TERMUX_PKG_SKIP_SRC_EXTRACT=true
 TERMUX_PKG_PLATFORM_INDEPENDENT=true
 TERMUX_PKG_AUTO_UPDATE=false
