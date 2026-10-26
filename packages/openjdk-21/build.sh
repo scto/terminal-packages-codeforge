@@ -91,6 +91,9 @@ termux_step_make_install() {
 		$TERMUX_PREFIX/lib/jvm/java-21-openjdk/
 	find $TERMUX_PREFIX/lib/jvm/java-21-openjdk/ -name "*.debuginfo" -delete
 
+	# Demos werden zur Laufzeit nicht gebraucht (spart Platz).
+	rm -rf $TERMUX_PREFIX/lib/jvm/java-21-openjdk/demo
+
 	# Dependent projects may need JAVA_HOME.
 	mkdir -p $TERMUX_PREFIX/lib/jvm/java-21-openjdk/etc/profile.d
 	echo "export JAVA_HOME=$TERMUX_PREFIX/lib/jvm/java-21-openjdk/" > \
