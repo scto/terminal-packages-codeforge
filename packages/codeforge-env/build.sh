@@ -4,7 +4,7 @@ TERMUX_PKG_LICENSE="GPL-3.0"
 TERMUX_PKG_MAINTAINER="@scto"
 # Version erhöhen, sobald sich codeforge-env.in ändert (Quelle: libs/terminal-engine/src/main/assets/codeforge-env
 # im Repo CodeForgeMobile, Abgleich mit scripts/sync-codeforge-env-package.sh).
-TERMUX_PKG_VERSION=1.0.0
+TERMUX_PKG_VERSION=1.0.1
 TERMUX_PKG_SKIP_SRC_EXTRACT=true
 TERMUX_PKG_PLATFORM_INDEPENDENT=true
 TERMUX_PKG_AUTO_UPDATE=false
@@ -19,4 +19,20 @@ termux_step_make_install() {
 		-e "s|@TERMUX_HOME@|${TERMUX_ANDROID_HOME}|g" \
 		"$TERMUX_PKG_BUILDER_DIR/codeforge-env.in" > "$TERMUX_PREFIX/bin/codeforge-env"
 	chmod 755 "$TERMUX_PREFIX/bin/codeforge-env"
+
+	# $PREFIX/tmp mit ins Paket: JVM/Gradle brechen sonst mit
+	# "java.io.tmpdir is set to a directory that doesn't exist" ab. Leere Verzeichnisse
+	# werden von dpkg angelegt (und beim Entfernen nur gelöscht, wenn sie leer sind).
+	mkdir -p "$TERMUX_PREFIX/tmp"
+}
+
+termux_step_create_debscripts() {
+	# Absicherung für Bootstrap-Archive/Installer, die leere Verzeichnisse verlieren.
+	cat > ./postinst <<-POSTINST_EOF
+		#!$TERMUX_PREFIX/bin/sh
+		mkdir -p "$TERMUX_PREFIX/tmp"
+		chmod 1777 "$TERMUX_PREFIX/tmp" 2>/dev/null || chmod 700 "$TERMUX_PREFIX/tmp" 2>/dev/null || true
+		exit 0
+	POSTINST_EOF
+	chmod 755 ./postinst
 }
