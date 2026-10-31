@@ -18,6 +18,7 @@ bin/llvm-*
 bin/opt
 bin/sh
 share/wasi-sysroot
+lib/rustlib/src
 "
 
 termux_pkg_auto_update() {
